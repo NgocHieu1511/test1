@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+/* khôi phục lại kích thước mặc định theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+.header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+header > div {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px, 10%;
+  background-color: #00cc66;
+
+  /* border-bottom: 1px solid #00cc66; */
+}
+/* LOGO */
+.inner-logo img {
+  /* max-width: 120px;
+  height: auto; */
+  height: 60px;
+  width: auto;
+}
+/* MENU*/
+.inner-menu > ul {
+  display: flex;
+}
+/* MENU CON */
+.submenu {
+  background: white;
+  list-style: none;
+  display: none;
+  position: absolute;
+  margin-top: 12px;
+  width: 15%;
+}
+.submenu > li {
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 20px;
+  margin: 0px 5px;
+  border: 0.1px solid #f2f2f2;
+  border-collapse: collapse;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.submenu > li > a {
+  color: black;
+}
+
+.submenu > li:hover {
+  font-weight: bold;
+  color: white;
+  background: #00cc66;
+}
+.submenu > li:hover > a {
+  color: white;
+}
+
+.inner-menu > ul > li:hover > .submenu {
+  display: block;
+}
+.inner-menu > ul > li > a {
+  /* display: inline-block; */
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.42s ease;
+  background-color: white; /* màu be nhạt */
+  color: #222;
+  border: none;
+  border-radius: 999px;
+  margin-right: 20px;
+}
+.inner-menu > ul > li > a:hover {
+  color: white;
+  background-color: #00cc66; /* nền thay đổi khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* đổ bóng nhẹ */
+}
+/* PHẦN ICON */
+.icon {
+  align-items: center;
+  display: flex;
+}
+.icon > a > i {
+  margin-right: 20px;
+  color: black;
+  font-size: 20px;
+}
+/* PHẦN THANH TÌM KIẾM */
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-box input::placeholder {
+  color: #bbb;
+}
+
+.search-box .icon {
+  color: #888;
+  font-size: 18px;
+}
+.accountMenu {
+  background: white;
+  color: black;
+  list-style: none;
+  display: none;
+  position: absolute;
+  margin-top: 12px;
+  width: 12%;
+  right: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.accountMenu > li {
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 20px;
+  margin: 0px 5px;
+  border: 0.1px solid #f2f2f2;
+  border-collapse: collapse;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.accountMenu > li:hover {
+  color: white;
+  background-color: #00cc66; /* nền thay đổi khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* đổ bóng nhẹ */
+}
+.container {
+  padding-top: 80px;
+}
+.btn {
+  display: inline-block;
+  min-width: 205px;
+  line-height: 60px;
+  color: #fff;
+  background: #00cc66;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 999px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.slide {
+  width: calc(100% - 80px); /* Trừ 40px mỗi bên */
+  margin: 0 auto;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  height: 600px;
+}
+
+.chuyen-slide {
+  display: flex;
+  transition: all 0.5s ease;
+  height: 600px;
+}
+
+.chuyen-slide img {
+  flex-shrink: 0;
+  width: calc(100vw - 80px); /* Đảm bảo ảnh to bằng khung slide */
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Nút điều hướng */
+.dieuhuong {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  color: white;
+  display: none;
+}
+
+.slide:hover .dieuhuong {
+  display: flex;
+}
