@@ -218,3 +218,33 @@ header > div {
 .slide:hover .dieuhuong {
   display: flex;
 }
+.swiper-wraper {
+  position: relative;
+  /* bottom: 10px;
+  left: 50px;
+  right: 50px; */
+  /* transform: translateX(-50%); */
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+  background-color: white;
+  /* padding: 10px; */
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.swiper-wraper > div {
+  font-size: 14px;
+  text-align: center;
+  justify-items: center;
+
+  margin: 0px 20px;
+}
+.swiper-wraper > div > i {
+  font-size: 40px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.best-seller > h2 {
+  text-align: left;
+  font-size: 32px;
+}
