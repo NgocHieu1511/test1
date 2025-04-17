@@ -244,7 +244,66 @@ header > div {
   color: gray;
   margin-bottom: 20px;
 }
-.best-seller > h2 {
-  text-align: left;
-  font-size: 32px;
+.best-seller {
+  padding: 10px 80px;
+  background-color: #edf3f4;
+}
+.best-seller-title {
+  display: flex;
+  justify-content: space-between;
+}
+.best-seller-title > h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.best-seller-items {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.best-seller-items > div {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 220px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.best-seller-items > div > img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.best-seller-items > div > h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+.best-seller-items > div > .author {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.best-seller-items > div > .price {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.best-seller-items > div > .price > .old-price {
+  text-decoration: line-through;
+  color: red;
+  margin-right: 5px;
+}
+.best-seller-items > div > .price > .new-price {
+  color: #00cc66;
+}
+.best-seller-items > div > button {
+  margin: 5px 3px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2196f3;
+  color: white;
 }
