@@ -307,3 +307,91 @@ header > div {
   background-color: #2196f3;
   color: white;
 }
+.best-seller-items > div > button:hover {
+  background-color: #0b7dda;
+}
+.best-seller-items > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.business-books {
+  padding: 10px 80px;
+}
+.business-books-title {
+  display: flex;
+  justify-content: space-between;
+}
+.business-books-title > h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.btn-view-all {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  color: #333;
+  background: white;
+  margin: 5px 3px;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+.btn-view-all:hover {
+  background-color: #00cc66;
+  color: #fff;
+}
+.business-books-items {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.business-books-items > div {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 220px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.business-books-items > div > img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.business-books-items > div > h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+.business-books-items > div > .author {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.business-books-items > div > .price {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.business-books-items > div > .price > .old-price {
+  text-decoration: line-through;
+  color: red;
+  margin-right: 5px;
+}
+.business-books-items > div > .price > .new-price {
+  color: #00cc66;
+}
+.business-books-items > div > button {
+  margin: 5px 3px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2196f3;
+  color: white;
+}
+.business-books-items > div > button:hover {
+  background-color: #0b7dda;
+}
+.business-books-items > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
