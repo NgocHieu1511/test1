@@ -16,26 +16,30 @@ document.addEventListener("click", function (event) {
   }
 });
 // hết phần account icon
-//phần slide show
-var KichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
+// Slide tự động
+var slide = document.getElementsByClassName("slide")[0];
+var KichThuoc = slide.clientWidth;
 var ChuyenSlide = document.getElementsByClassName("chuyen-slide")[0];
 var Img = ChuyenSlide.getElementsByTagName("img");
 var Max = KichThuoc * Img.length;
-Max -= KichThuoc;
 var Chuyen = 0;
-//chuyển sang phải
-function Next() {
-  if (Chuyen < Max) Chuyen += KichThuoc;
-  else Chuyen = 0;
 
+function Next() {
+  if (Chuyen < Max - KichThuoc) {
+    Chuyen += KichThuoc;
+  } else {
+    Chuyen = 0;
+  }
   ChuyenSlide.style.marginLeft = "-" + Chuyen + "px";
 }
-//chuyển sang trái
+
 function Back() {
-  if (Chuyen == 0) Chuyen = Max;
-  else Chuyen -= KichThuoc;
+  if (Chuyen === 0) {
+    Chuyen = Max - KichThuoc;
+  } else {
+    Chuyen -= KichThuoc;
+  }
   ChuyenSlide.style.marginLeft = "-" + Chuyen + "px";
 }
-setInterval(function () {
-  Next();
-}, 4000);
+
+setInterval(Next, 10000);

@@ -14,6 +14,7 @@ body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
 }
+/* PHẦN HEADER */
 .header {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -73,6 +74,7 @@ header > div {
 .submenu > li:hover > a {
   color: white;
 }
+/* HẾT MENU CON */
 
 .inner-menu > ul > li:hover > .submenu {
   display: block;
@@ -160,9 +162,11 @@ header > div {
   background-color: #00cc66; /* nền thay đổi khi hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* đổ bóng nhẹ */
 }
+/* Container */
 .container {
   padding-top: 80px;
 }
+/* Nút button */
 .btn {
   display: inline-block;
   min-width: 205px;
@@ -178,8 +182,10 @@ header > div {
 .btn:hover {
   opacity: 0.9;
 }
+/* hết nút btn */
+/*Phần banner*/
 .slide {
-  width: calc(100% - 80px); /* Trừ 40px mỗi bên */
+  width: calc(100% - 80px);
   margin: 0 auto;
   margin-top: 10px;
   overflow: hidden;
@@ -190,34 +196,36 @@ header > div {
 
 .chuyen-slide {
   display: flex;
-  transition: all 0.5s ease;
-  height: 600px;
+  width: 100%; /* sẽ được cập nhật bằng JS */
+  transition: margin-left 0.5s ease-in-out;
+  height: 100%;
 }
 
 .chuyen-slide img {
-  flex-shrink: 0;
-  width: calc(100vw - 80px); /* Đảm bảo ảnh to bằng khung slide */
-  height: 600px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  flex: 0 0 100%; /* mỗi ảnh chiếm 100% slide */
 }
 
-/* Nút điều hướng */
 .dieuhuong {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
   padding: 0 20px;
-  display: flex;
   justify-content: space-between;
   font-size: 40px;
   color: white;
   display: none;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .slide:hover .dieuhuong {
   display: flex;
 }
+
 .swiper-wraper {
   position: relative;
   /* bottom: 10px;
