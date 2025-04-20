@@ -263,7 +263,17 @@ header > div {
 .best-seller-title > h2 {
   font-size: 28px;
   margin-bottom: 30px;
-  color: #333;
+  color: #e95060;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.divider-line1 {
+  height: 2px;
+  background-color: #edf3f4; /* màu xám nhạt */
+  flex-grow: 1;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
 }
 .best-seller-items {
   display: flex;
@@ -272,65 +282,83 @@ header > div {
   flex-wrap: wrap;
   gap: 20px;
 }
-.best-seller-items > div {
+.best-seller-items > a {
   background-color: #fff;
   border-radius: 10px;
   width: 220px;
   padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.best-seller-items > div > img {
+.best-seller-items > a > img {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
-.best-seller-items > div > h3 {
+.best-seller-items > a > h3 {
   font-size: 16px;
   margin: 10px 0 5px;
+  white-space: nowrap; /* Không cho xuống dòng */
+  overflow: hidden; /* Ẩn phần dư */
+  text-overflow: ellipsis; /* Hiện dấu ... */
+  width: 100%; /* hoặc đặt độ rộng cố định nếu cần */
+  text-align: center;
+  margin-top: 20px;
 }
-.best-seller-items > div > .author {
+a {
+  color: #333;
+}
+.best-seller-items > a > .author {
   color: #888;
   font-size: 14px;
   margin-bottom: 8px;
 }
-.best-seller-items > div > .price {
+/* .stars {
+  font-size: 10px; /* Kích thước ngôi sao 
+  letter-spacing: 2px; /* Khoảng cách giữa các ngôi sao 
+  text-align: center;
+  margin: 10px 10px;
+} */
+
+.price {
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 10px;
+  text-align: center;
+  margin-top: 20px;
 }
-.best-seller-items > div > .price > .old-price {
+.old-price {
   text-decoration: line-through;
   color: red;
   margin-right: 5px;
 }
-.best-seller-items > div > .price > .new-price {
+.new-price {
   color: #00cc66;
 }
-.best-seller-items > div > button {
+/* .best-seller-items > a > button {
   margin: 5px 3px;
   padding: 6px 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   background-color: #2196f3;
-  color: white;
-}
+  color: white; */
+/* }
 .best-seller-items > div > button:hover {
   background-color: #0b7dda;
-}
-.best-seller-items > div:hover {
+}*/
+.best-seller-items > a:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.business-books {
+.inner-books {
   padding: 10px 80px;
 }
-.business-books-title {
+.inner-title {
   display: flex;
   justify-content: space-between;
 }
-.business-books-title > h2 {
-  font-size: 28px;
+.business-books-title > h3 {
+  font-size: 24px;
   margin-bottom: 30px;
   color: #333;
 }
@@ -365,28 +393,34 @@ header > div {
   height: auto;
   border-radius: 5px;
 }
-.business-books-items > div > h3 {
-  font-size: 16px;
+.business-books-items > div > h4 {
+  font-size: 14px;
   margin: 10px 0 5px;
+  white-space: nowrap; /* Không cho xuống dòng */
+  overflow: hidden; /* Ẩn phần dư */
+  text-overflow: ellipsis; /* Hiện dấu ... */
+  width: 100%; /* hoặc đặt độ rộng cố định nếu cần */
+  text-align: center;
+  margin-top: 20px;
 }
-.business-books-items > div > .author {
+/* .business-books-items > div > .author {
   color: #888;
   font-size: 14px;
   margin-bottom: 8px;
-}
-.business-books-items > div > .price {
+} */
+/* .business-books-items > div > .price {
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 10px;
-}
-.business-books-items > div > .price > .old-price {
+} */
+/* .business-books-items > div > .price > .old-price {
   text-decoration: line-through;
   color: red;
   margin-right: 5px;
-}
-.business-books-items > div > .price > .new-price {
+} */
+/* .business-books-items > div > .price > .new-price {
   color: #00cc66;
-}
+} */
 .business-books-items > div > button {
   margin: 5px 3px;
   padding: 6px 12px;
@@ -402,4 +436,18 @@ header > div {
 .business-books-items > div:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.divider-line {
+  height: 2px;
+  background-color: #edf3f4; /* màu xám nhạt */
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.highlight-bar {
+  width: 5px;
+  height: 20px;
+  background-color: #f0c000; /* màu vàng */
+  margin-right: 10px;
 }
