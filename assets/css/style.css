@@ -451,3 +451,81 @@ a {
   background-color: #f0c000; /* màu vàng */
   margin-right: 10px;
 }
+/* Literature-books */
+.literature-books-title > h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.literature-books-items {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.literature-books-items > div {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 220px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.literature-books-items > div > img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.literature-books-items > div > h4 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+  white-space: nowrap; /* Không cho xuống dòng */
+  overflow: hidden; /* Ẩn phần dư */
+  text-overflow: ellipsis; /* Hiện dấu ... */
+  width: 100%; /* hoặc đặt độ rộng cố định nếu cần */
+  text-align: center;
+  margin-top: 20px;
+}
+.literature-books-items > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* novel */
+.novel-title > h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.novel-items {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.novel-items > div {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 220px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.novel-items > div > img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.novel-items > div > h4 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+  white-space: nowrap; /* Không cho xuống dòng */
+  overflow: hidden; /* Ẩn phần dư */
+  text-overflow: ellipsis; /* Hiện dấu ... */
+  width: 100%; /* hoặc đặt độ rộng cố định nếu cần */
+  text-align: center;
+  margin-top: 20px;
+}
+.novel-items > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
