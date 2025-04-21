@@ -40,7 +40,7 @@ header > div {
   width: auto;
 }
 /* MENU*/
-/* HAMBURGER (Font Awesome style) */
+/* HAMBURGER   */
 .hamburger {
   display: none;
   font-size: 24px;
@@ -49,7 +49,7 @@ header > div {
   margin-right: 20px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE  */
 @media (max-width: 767px) {
   .hamburger {
     display: block;
@@ -69,7 +69,7 @@ header > div {
 .inner-menu > ul {
   display: flex;
 }
-/* MENU CON */
+/* MENU CON*/
 .submenu {
   background: white;
   list-style: none;
@@ -143,7 +143,9 @@ header > div {
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-right: 20px;
+  transition: all 0.3s ease;
 }
+
 .search-box input {
   border: none;
   background: transparent;
@@ -151,6 +153,7 @@ header > div {
   flex: 1;
   font-size: 16px;
   color: #333;
+  transition: all 0.3s ease;
 }
 
 .search-box input::placeholder {
@@ -160,6 +163,7 @@ header > div {
 .search-box .icon {
   color: #888;
   font-size: 18px;
+  cursor: pointer;
 }
 .accountMenu {
   background: white;

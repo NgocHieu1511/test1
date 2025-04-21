@@ -64,6 +64,50 @@
   .accountMenu {
     display: none;
   }
+  /* Slide chính */
+  .slide {
+    width: 100%;
+    max-width: 1400px;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    height: 600px;
+  }
+
+  /* Vùng chứa ảnh */
+  .chuyen-slide {
+    display: flex;
+    transition: margin-left 0.5s ease-in-out;
+    height: 100%;
+  }
+
+  /* Ảnh */
+  .chuyen-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 0 0 100%;
+  }
+
+  /* Nút điều hướng */
+  .dieuhuong {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+    justify-content: space-between;
+    font-size: 40px;
+    color: white;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .slide:hover .dieuhuong {
+    display: flex;
+  }
 }
 /* ========= TABLET: width từ 768px đến dưới 1024px ========= */
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -96,6 +140,12 @@
 
   .accountMenu {
     width: 150px;
+  }
+  .slide {
+    height: 400px;
+  }
+  .dieuhuong {
+    font-size: 30px;
   }
 }
 
@@ -155,5 +205,35 @@
 
   .accountMenu {
     width: 100%;
+  }
+  .slide {
+    height: 250px;
+  }
+  .dieuhuong {
+    font-size: 25px;
+  }
+  .search-box {
+    width: 45px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .search-box input {
+    width: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+  }
+
+  .search-box.active {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .search-box.active input {
+    width: 100%;
+    opacity: 1;
+    pointer-events: auto;
   }
 }
