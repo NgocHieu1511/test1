@@ -1,0 +1,159 @@
+/* ========= PC: width từ 1024px trở lên ========= */
+@media (min-width: 1024px) {
+  header > div {
+    padding: 20px 10%;
+    flex-wrap: nowrap;
+  }
+
+  /* Logo */
+  .inner-logo img {
+    height: 60px;
+    width: auto;
+  }
+
+  /* Menu */
+  .inner-menu > ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .inner-menu > ul > li > a {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: all 0.42s ease;
+    background-color: white;
+    color: #222;
+    border: none;
+    border-radius: 999px;
+    margin-right: 20px;
+  }
+
+  .inner-menu > ul > li > a:hover {
+    color: white;
+    background-color: #00cc66;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Thanh tìm kiếm */
+  .search-box {
+    width: 300px;
+  }
+
+  .icon {
+    align-items: center;
+    display: flex;
+  }
+
+  .icon > a > i {
+    margin-right: 20px;
+    color: black;
+    font-size: 20px;
+  }
+
+  /* Menu con */
+  .submenu {
+    display: none;
+  }
+
+  .inner-menu > ul > li:hover > .submenu {
+    display: block;
+  }
+
+  .accountMenu {
+    display: none;
+  }
+}
+/* ========= TABLET: width từ 768px đến dưới 1024px ========= */
+@media (max-width: 1024px) and (min-width: 768px) {
+  header > div {
+    padding: 20px 5%;
+    flex-wrap: wrap;
+  }
+
+  .inner-menu > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .inner-menu > ul > li > a {
+    padding: 8px 16px;
+    margin-right: 10px;
+  }
+
+  .search-box {
+    width: 220px;
+    margin-top: 10px;
+  }
+
+  .icon {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .accountMenu {
+    width: 150px;
+  }
+}
+
+/* ========= MOBILE: width dưới 768px ========= */
+@media (max-width: 767px) {
+  header > div {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .inner-logo {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  .inner-menu {
+    width: 100%;
+  }
+
+  .inner-menu > ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inner-menu > ul > li > a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    margin-right: 0;
+    border-radius: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .submenu > li {
+    padding: 10px 16px;
+  }
+
+  .icon {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .accountMenu {
+    width: 100%;
+  }
+}

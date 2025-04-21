@@ -40,6 +40,32 @@ header > div {
   width: auto;
 }
 /* MENU*/
+/* HAMBURGER (Font Awesome style) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+  margin-right: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+
+  .inner-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .inner-menu.active {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
 .inner-menu > ul {
   display: flex;
 }

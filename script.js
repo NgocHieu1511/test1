@@ -43,3 +43,10 @@ function Back() {
 }
 
 setInterval(Next, 10000);
+//hamburger menu
+const hamburger = document.getElementById("hamburger");
+const menu = document.querySelector(".inner-menu");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
