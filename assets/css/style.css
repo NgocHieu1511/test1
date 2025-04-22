@@ -49,23 +49,6 @@ header > div {
   margin-right: 20px;
 }
 
-/* RESPONSIVE  */
-@media (max-width: 767px) {
-  .hamburger {
-    display: block;
-  }
-
-  .inner-menu {
-    display: none;
-    width: 100%;
-  }
-
-  .inner-menu.active {
-    display: block;
-    margin-top: 10px;
-  }
-}
-
 .inner-menu > ul {
   display: flex;
 }
@@ -284,7 +267,7 @@ header > div {
 }
 .best-seller {
   padding: 10px 80px;
-  background-color: #edf3f4;
+  background-color: #f2f1f0;
 }
 .best-seller-title {
   display: flex;
@@ -337,7 +320,7 @@ header > div {
 a {
   color: #333;
 }
-.best-seller-items > a > .author {
+.author {
   color: #888;
   font-size: 14px;
   margin-bottom: 8px;
@@ -420,7 +403,7 @@ a {
 }
 .business-books-items > div > img {
   width: 100%;
-  height: auto;
+  height: 300px;
   border-radius: 5px;
 }
 .business-books-items > div > h4 {
@@ -481,32 +464,32 @@ a {
   background-color: #f0c000; /* màu vàng */
   margin-right: 10px;
 }
-/* Literature-books */
-.literature-books-title > h3 {
+/* Comic-books */
+.Comic-books-title > h3 {
   font-size: 24px;
   margin-bottom: 30px;
   color: #333;
 }
-.literature-books-items {
+.Comic-books-items {
   display: flex;
   padding: 40px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-.literature-books-items > div {
+.Comic-books-items > div {
   background-color: #fff;
   border-radius: 10px;
   width: 220px;
   padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.literature-books-items > div > img {
+.Comic-books-items > div > img {
   width: 100%;
-  height: auto;
+  height: 300px;
   border-radius: 5px;
 }
-.literature-books-items > div > h4 {
+.Comic-books-items > div > h4 {
   font-size: 14px;
   margin: 10px 0 5px;
   white-space: nowrap; /* Không cho xuống dòng */
@@ -516,7 +499,7 @@ a {
   text-align: center;
   margin-top: 20px;
 }
-.literature-books-items > div:hover {
+.Comic-books-items > div:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -542,7 +525,7 @@ a {
 }
 .novel-items > div > img {
   width: 100%;
-  height: auto;
+  height: 300px;
   border-radius: 5px;
 }
 .novel-items > div > h4 {
@@ -558,4 +541,98 @@ a {
 .novel-items > div:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.News-title {
+  display: flex;
+  justify-content: space-between;
+}
+.News-title > h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+  margin-top: 30px;
+  font-weight: bold;
+}
+/* .News-title > h3 > a {
+  margin: 10px 5px;
+} */
+.divider-line1 {
+  height: 2px;
+  background-color: #edf3f4; /* màu xám nhạt */
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 50px;
+}
+.News {
+  margin: 50px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.News-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.News-title h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #333;
+}
+
+.divider-line1 {
+  height: 2px;
+  background-color: #edf3f4;
+  flex-grow: 1;
+}
+
+.News-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px auto;
+}
+
+.news {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.news img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.news p {
+  color: gray;
+  font-size: 12px;
+  margin: 0 10px 10px 10px;
+}
+
+.News-more-wrap {
+  margin-top: 30px;
+}
+
+.News-more {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #00c853;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
 }
