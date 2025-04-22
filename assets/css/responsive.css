@@ -237,3 +237,19 @@
     pointer-events: auto;
   }
 }
+/* RESPONSIVE  */
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+
+  .inner-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .inner-menu.active {
+    display: block;
+    margin-top: 10px;
+  }
+}
