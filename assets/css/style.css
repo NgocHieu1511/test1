@@ -829,8 +829,8 @@ a {
 }
 
 .widget {
-  width: 55%;
-  height: 400px;
+  width: 65%;
+  height: 500px;
   background: #f4f4f4;
   margin-bottom: 20px;
 }
@@ -851,6 +851,13 @@ a {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
   padding: 10px;
+  display: flex;
+}
+.widget > ul > li > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 0;
 }
 .widget ul li a:hover {
   font-weight: bold;
