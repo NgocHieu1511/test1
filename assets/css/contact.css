@@ -1,0 +1,94 @@
+body {
+  font-family: "DM-sans", sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-contact {
+  /* max-width: 800px; */
+  margin: 40px auto;
+  padding: 20px;
+  /* border: 1px solid #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.home:hover {
+  color: #42d9a5;
+}
+
+.inner-contact > .form > h2 {
+  margin-top: 20px;
+  font-size: 32px;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+}
+
+.hotline {
+  text-align: center;
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.workdays {
+  font-size: 16px;
+  text-align: center;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.support-msg {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-form button {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #009624;
+}
+
+.map {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.breadcrumb {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}

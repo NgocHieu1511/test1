@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- responsive css -->
     <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <title>Header</title>
+    <title>Giới thiệu</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -23,6 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./common.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -74,6 +75,64 @@
       </div>
     </header>
     <!-- hết phần header -->
+    <div class="container">
+      <div class="breadcrumb">
+        <a class="home" href="./index.html">Trang chủ</a
+        ><span>
+          <i class="fa-solid fa-caret-right" style="color: #333"></i> </span
+        ><a href="./introduction.html" style="color: #42d9a5">Giới thiệu</a>
+      </div>
+      <div class="intro-container">
+        <div class="content">
+          <h1>Welcome to DHP BOOKS</h1>
+          <p>
+            DHP BOOKS là một trang web bán sách trực tuyến uy tín, chuyên cung
+            cấp đa dạng các đầu sách thuộc nhiều thể loại như văn học, kỹ năng
+            sống, kinh tế, sách thiếu nhi, và sách học thuật. Với giao diện thân
+            thiện, dễ sử dụng cùng hệ thống tìm kiếm thông minh, DHP BOOKS giúp
+            người đọc dễ dàng tiếp cận và lựa chọn những cuốn sách phù hợp với
+            nhu cầu. Ngoài ra, trang web còn thường xuyên cập nhật các đầu sách
+            mới, tổ chức nhiều chương trình khuyến mãi hấp dẫn và hỗ trợ giao
+            hàng nhanh chóng trên toàn quốc. DHP BOOKS cam kết mang đến cho
+            khách hàng trải nghiệm mua sắm sách tiện lợi, chất lượng và đầy cảm
+            hứng.
+          </p>
+        </div>
+        <aside class="sidebar">
+          <div class="widget">
+            <h3>BÀI VIẾT MỚI</h3>
+            <ul>
+              <li><a href="#">Cùng Khánh Vy review cuốn sách...</a></li>
+              <li>
+                <a href="#">VTC14 Review bộ sách 101 điều nhà lãnh đạo...</a>
+              </li>
+              <li>
+                <a href="#">Khánh Vy review sách “Luyện siêu trí nhớ...”</a>
+              </li>
+              <li>
+                <a href="#">Top 5 cuốn sách luyện thi THPT Quốc gia...</a>
+              </li>
+            </ul>
+          </div>
+          <div class="widget">
+            <h3>DANH MỤC SẢN PHẨM</h3>
+            <ul>
+              <li><a href="#">Sách kinh doanh</a></li>
+              <li><a href="#">Sách văn học</a></li>
+              <li><a href="#">Truyện tranh</a></li>
+              <li><a href="#">Sách kỹ băng sống</a></li>
+              <li><a href="#">Tiểu thuyết</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "footer.html");
+      });
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

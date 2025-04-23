@@ -24,6 +24,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./common.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -41,8 +42,8 @@
 
         <div class="inner-menu">
           <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./introduction.html">Giới thiệu</a></li>
             <li>
               <a href="#">Thể loại</a>
               <ul class="submenu">
@@ -54,7 +55,7 @@
               </ul>
             </li>
             <li><a href="#">Tin tức</a></li>
-            <li><a href="#">Liên hệ</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
           </ul>
         </div>
 
@@ -67,8 +68,8 @@
           <a class="accountIcon" href="#"
             ><i class="fa-regular fa-circle-user"></i>
             <ul class="accountMenu">
-              <li>Đăng ký</li>
-              <li>Đăng nhập</li>
+              <li><a href="#">Đăng ký</a></li>
+              <li><a href="#">Đăng nhập</a></li>
             </ul></a
           >
         </div>
@@ -428,7 +429,8 @@
       <div class="News">
         <div class="News-title">
           <div class="divider-line1"></div>
-          <h3><i class="fa-solid fa-bars" style="color: #333"></i>Tin Tức</h3>
+          <i class="fa-solid fa-bars" style="color: #333"></i>
+          <h3>Tin Tức</h3>
           <div class="divider-line1"></div>
         </div>
         <div class="News-box">
@@ -475,17 +477,89 @@
       </div>
       <div class="Comment">
         <div class="Comment-title">
-          <h3>Đánh giá</h3>
-          <div class="Comment-box">
-            <div class="Comment1"></div>
-            <div class="Comment2"></div>
-            <div class="Comment3"></div>
-          </div>
-          <a href="#" class="News-more">Xem tất cả</a>
+          <div class="divider-line1"></div>
+          <i class="fa-solid fa-user"></i>
+          <h3>KHÁCH HÀNG NÓI VỀ CHÚNG TÔI</h3>
+          <div class="divider-line1"></div>
         </div>
+        <div class="Comment-box">
+          <div class="Inner-comment">
+            <div class="rating">
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+            </div>
+            <p>
+              Mình đặt sách hôm thứ Hai và chỉ sau 2 ngày đã nhận được hàng.
+              Đóng gói rất cẩn thận, sách không bị móp hay rách. Nội dung sách
+              thì khỏi bàn, giấy in rõ ràng, không có lỗi chính tả. Rất hài lòng
+              với trải nghiệm mua hàng lần này, chắc chắn sẽ quay lại!
+            </p>
+            <div class="customer-info">
+              <img src="./assets/img/avatar/avatar.png" alt="Avatar" />
+              <div>
+                <strong>Cristiano Ronaldo</strong><br />
+                <small>02/05/2024</small>
+              </div>
+            </div>
+          </div>
+          <div class="Inner-comment">
+            <div class="rating">
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+            </div>
+            <p>
+              Website dễ dùng, tìm sách nhanh, thanh toán cũng tiện lợi. Tuy
+              nhiên, mình nghĩ nên cập nhật tình trạng kho thường xuyên hơn vì
+              cuốn mình muốn ban đầu hết hàng. Dù sao, khi đặt được sách rồi thì
+              nhận hàng nhanh, sách mới và đẹp.
+            </p>
+            <div class="customer-info">
+              <img src="./assets/img/avatar/avatar2.png" alt="Avatar" />
+              <div>
+                <strong>Lionel Messi</strong><br />
+                <small>02/05/2024</small>
+              </div>
+            </div>
+          </div>
+          <div class="Inner-comment">
+            <div class="rating">
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+            </div>
+            <p>
+              Mình rất thích dịch vụ hỗ trợ khách hàng ở đây. Lúc đặt nhầm phiên
+              bản bìa mềm, mình liên hệ và được đổi sang bìa cứng ngay trong
+              ngày. Sách in sắc nét, giấy trắng đẹp, đóng gáy chắc chắn. Mua
+              online mà cảm giác như đi hiệu sách vậy!
+            </p>
+            <div class="customer-info">
+              <img src="./assets/img/avatar/avatar3.png" alt="Avatar" />
+              <div>
+                <strong class="name">Neymar</strong><br />
+                <small class="date">02/05/2024</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="Comment-more">Xem tất cả</a>
       </div>
     </div>
 
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "footer.html");
+      });
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

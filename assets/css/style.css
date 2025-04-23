@@ -170,6 +170,7 @@ header > div {
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .accountMenu > li:hover {
   color: white;
   background-color: #00cc66; /* nền thay đổi khi hover */
@@ -177,7 +178,7 @@ header > div {
 }
 /* Container */
 .container {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 /* Nút button */
 .btn {
@@ -347,18 +348,7 @@ a {
 .new-price {
   color: #00cc66;
 }
-/* .best-seller-items > a > button {
-  margin: 5px 3px;
-  padding: 6px 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #2196f3;
-  color: white; */
-/* }
-.best-seller-items > div > button:hover {
-  background-color: #0b7dda;
-}*/
+
 .best-seller-items > a:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -635,4 +625,241 @@ a {
   color: white;
   border-radius: 5px;
   font-weight: bold;
+}
+.rating {
+  color: #fcd34d; /* vàng */
+  font-size: 20px;
+}
+.Comment {
+  background-color: #cccc;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.Comment-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.Comment-title i {
+  font-size: 20px;
+  color: #333;
+  margin-top: 35px;
+}
+
+.Comment-title h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 35px;
+}
+
+/* .divider-line1 {
+  width: 60px;
+  height: 2px;
+  background-color: #000;
+} */
+
+.Comment-box {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Inner-comment {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 500px;
+  height: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.rating {
+  color: #fcd34d; /* vàng sao */
+  margin-bottom: 10px;
+}
+
+.Inner-comment p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.customer-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.customer-info strong {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+}
+.customer-info small {
+  font-size: 12px;
+  color: gray;
+}
+
+.Comment-more {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  transition: 0.3s;
+}
+
+.Comment-more:hover {
+  color: #0056b3;
+}
+.footer {
+  background-color: #131118;
+  color: white;
+  padding: 40px 20px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 50px;
+}
+
+.footer-column {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.subscribe-input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.subscribe-button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.footer-divider {
+  margin: 20px 0;
+  border-color: #444;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.payment-icons img {
+  width: 40px;
+  margin: 5px;
+}
+
+.social-icons > a > img {
+  color: white;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+.intro-container {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  justify-items: center;
+  margin: 40px 20px;
+}
+.content {
+  flex: 3;
+  padding-right: 50px;
+
+  margin: 20px 50px;
+  border-right: 0.1px solid #cccccc;
+  color: #333;
+  max-width: 900px;
+}
+.content > h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.content > p {
+  line-height: 1.7;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.widget {
+  width: 55%;
+  height: 400px;
+  background: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.widget h3 {
+  background: #0073e6;
+  color: #fff;
+  padding: 10px;
+  margin: -10px -10px 10px -10px;
+}
+
+.widget ul {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.widget ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.widget ul li a:hover {
+  font-weight: bold;
+}
+.breadcrumb {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.home:hover {
+  color: #42d9a5;
 }
