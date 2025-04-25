@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>KHU VƯỜN MÙA HẠ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="breadcrumb">
+    <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt; 
+    <a href="tieuthuyet.html">Truyện Tranh</a> &gt; 
+    <span class="current">KHU VƯỜN MÙA HẠ </span>
+  </div>
+ 
+  <div class="container">
+    <div class="book-detail">
+      <div class="book-image">
+        <img src="img/khuvuonmuaha.webp" alt="Bìa sách KHU VƯỜN MÙA HẠ">
+      </div>
+      <div class="book-info">
+        <h1>KHU VƯỜN MÙA HẠ</h1>
+        <p><strong>Tác giả:</strong> KAZUMI YUMOTO</p>
+        <div class="price-box">
+          <span class="discount-price">57.800₫</span>
+          <span class="original-price">68.000₫</span>
+          <span class="discount-percent">-15%</span>
+        </div>
+        <div class="stock">
+          <button onclick="decrease()">-</button>
+          <input type="number" id="qty" value="1" min="1" max="100">
+          <button onclick="increase()">+</button>
+          <span>Còn lại 100 trong kho</span>
+        </div>
+        <div class="buttons">
+          <button class="add">Thêm vào giỏ hàng</button>
+          <button class="buy">Mua ngay</button>
+        </div>
+        <div class="marketplace">
+          <p>Mua sách trên sàn TMDT</p>
+          <img src="./img/1685525042lazada-app-logo.webp" alt="Lazada" height="24">
+          <img src="./img/shoppe.png" alt="Shopee" height="24">
+        </div>
+      </div>
+    </div>
+
+    <div class="book-desc">
+      <h2>Giới thiệu sách</h2>
+      <p>Những tưởng mùa hè năm lớp Sáu sẽ trôi đi trong êm ả, Kiyama, Yamashita và Wakabe đều không ngờ chúng đang đứng trước ngưỡng của cuộc đời. Cuộc gặp gỡ với “ông cụ”, người suốt câu chuyện không hề được nêu tên, đã đem đến cho ba đứa trẻ một tình bạn kỳ lạ. Có lẽ, đó là lần đầu tiên chúng kết bạn với người lớn, và đó là một mối quan hệ bình đẳng theo đúng nghĩa. Ba đứa giúp ông sửa nhà, chăm sóc vườn hoa, giặt và phơi quần áo… bù lại chúng được ông dạy gọt lê, dạy học chữ Hán, và trên hết, chúng học được rằng việc già đi, lưng còng xuống, mặt nhiều nếp nhăn cũng mang ý nghĩa. Ba đứa trẻ dần phải tự đối mặt với những thắc mắc của chính bản thân chúng về cuộc sống, những điều mà, có khi sống gần trọn cuộc đời người ta vẫn chưa hiểu nổi. </p>
+    </div>
+
+    <div class="book-info-detail">
+      <h2>Thông tin chi tiết</h2>
+      <ul>
+        <li><strong>Tác giả:</strong> KAZUMI YUMOTO</li>
+        <li><strong>Dịch giả:</strong> Nguyễn Thanh Hà </li>
+        <li><strong>Nhà xuất bản:</strong> Văn Học</li>
+        <li><strong>Kích thước:</strong> 14x20.5cm</li>
+        <li><strong>Số trang:</strong> 232</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+  <section class="suggestions">
+    <div class="suggestions-header">
+        <h2>Có thể bạn cũng thích</h2>
+        <a href="#" class="see-more">Xem thêm →</a>
+      </div>
+      <div class="book-list">
+        <div class="book-item">
+          <a href="https://phong1807.github.io/VanHoc1/"><img src="img/de_tam_khong_ban.PNG" alt="Để tâm không bận "></a>
+          <a href="https://phong1807.github.io/VanHoc1/" class="title">Để tâm không bận</a>
+          <p class="price">52.000đ <span class="old-price">65.000đ</span></p>
+        </div>
+        <div class="book-item">
+          <a href="https://phong1807.github.io/VanHoc3/"><img src="img/ngay_xua_co_mot_chuyen_tinh.png" alt="Ngày Xưa Có Một Chuyện Tình"></a>
+          <a href="https://phong1807.github.io/VanHoc3/" class="title">Ngày Xưa Có Một Chuyện Tình</a>
+          <p class="price">65.450đ <span class="old-price">77.000đ</span></p>
+        </div>
+        <div class="book-item">
+          <a href="https://phong1807.github.io/VanHoc4/"><img src="img/khong-gia-dinh.jpg" alt="Không Gia Đình"></a>
+          <a href="https://phong1807.github.io/VanHoc4/" class="title">Không Gia Đình</a>
+          <p class="price">128.000đ <span class="old-price">160.000đ</span></p>
+        </div>
+        <div class="book-item">
+          <a href="https://phong1807.github.io/VanHoc5/"><img src="img/neu_biet_tram_nam_la_huu_han.webp" alt="Nếu biết trăm năm là hữu hạn"></a>
+          <a href="https://phong1807.github.io/VanHoc5/" class="title">Nếu biết trăm năm là hữu hạn</a>
+          <p class="price">118.150đ <span class="old-price">139.000đ</span></p>
+        </div>
+    </div>
+  </section>
+</div>
+  
+<script src="script.js"></script>
+</body>
+</html>
+

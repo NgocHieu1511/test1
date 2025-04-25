@@ -1,0 +1,129 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+  
+    .breadcrumb-wrapper {
+      background-color: #eaf4e7; /* nền xanh nhạt */
+      padding: 10px 20px;
+      margin-bottom: 12px;
+    }
+    
+    .breadcrumb {
+      background-color: #e6f2e6 ;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    .breadcrumb a {
+      color: #111;
+      text-decoration: none;
+    }
+    
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    
+    .page-title {
+      font-size: 28px;
+      color: #2e7d32;
+      font-weight: 700;
+      margin-left: 20px;
+      margin-bottom: 24px;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+    
+    .page-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 100%; /* Gạch dài đúng bằng độ dài text */
+      background-color: #2e7d32;
+      border-radius: 2px;
+    }
+    
+  
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+  
+    .news-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .news-card img {
+      width: 100%;
+      height: 200px; /* Chiều cao cố định cho ảnh */
+      object-fit: cover; /* Ảnh lấp đầy khung và giữ tỉ lệ */
+    }
+  
+    .news-content {
+      padding: 15px;
+    }
+  
+    .news-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #222;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .news-title:hover {
+      color: #2e7d32;
+      text-decoration: underline;
+    }
+  
+    .news-date {
+      font-size: 14px;
+      color: #999;
+    }
+  
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+    
+    .pagination a {
+      color: #333;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+    
+    .pagination a:hover {
+      border-color: #ccc;
+    }
+    
+    .pagination .active {
+      border: 1px solid #2e7d32;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+    
