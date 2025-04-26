@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>DUNE - XỨ CÁT</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="breadcrumb">
+    <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt; 
+    <a href="tieuthuyet.html">Tiểu thuyết</a> &gt; 
+    <span class="current">DUNE - XỨ CÁT </span>
+  </div>
+ 
+  <div class="container">
+    <div class="book-detail">
+      <div class="book-image">
+        <img src="img/xucatbiamembia.webp" alt="Bìa sách DUNE - XỨ CÁT">
+      </div>
+      <div class="book-info">
+        <h1>DUNE - XỨ CÁT</h1>
+        <p><strong>Tác giả:</strong> FRANK HERBERT</p>
+        <div class="price-box">
+          <span class="discount-price">211.650₫</span>
+          <span class="original-price">249.000₫</span>
+          <span class="discount-percent">-15%</span>
+        </div>
+        <div class="stock">
+          <button onclick="decrease()">-</button>
+          <input type="number" id="qty" value="1" min="1" max="100">
+          <button onclick="increase()">+</button>
+          <span>Còn lại 100 trong kho</span>
+        </div>
+        <div class="buttons">
+          <button class="add">Thêm vào giỏ hàng</button>
+          <button class="buy">Mua ngay</button>
+        </div>
+        <div class="marketplace">
+          <p>Mua sách trên sàn TMDT</p>
+          <img src="./img/1685525042lazada-app-logo.webp" alt="Lazada" height="24">
+          <img src="./img/shoppe.png" alt="Shopee" height="24">
+        </div>
+      </div>
+    </div>
+
+    <div class="book-desc">
+      <h2>Giới thiệu sách</h2>
+      <p>Một thời điểm rất xa trong tương lai…</p>
+
+      <p>Từ đời này sang đời khác, người Fremen trên hành tinh sa mạc lưu truyền lời tiên tri về một đấng cứu tinh sẽ dẫn dắt họ giành lấy tự do đích thực…</p>
+
+      <p>Từ thế hệ này sang thế hệ khác, những nữ phù thủy Bene Gesserit mỏi mòn chờ đợi sự xuất hiện của một B.G. nam giới duy nhất, người có thể vượt qua mọi giới hạn không gian - thời gian…</p>
+      
+      <p>Là Lisal al-Gaib của người Fremen, là Kwisatz Haderach của học viện Bene Gesserit, chàng công tước trẻ tuổi Paul Atreides đã làm tất cả những gì có thể để thay đổi định mệnh đó. Cha bị giết chết, mẹ bị cho là kẻ phản bội, gia tộc bị tàn sát, bản thân bị săn đuổi đến đường cùng, Paul đơn độc dấn thân vào một cuộc phiêu lưu sinh tử, không hề biết rằng mỗi hành động của mình sẽ góp phần quyết định vận mệnh của cả thiên hà. Sa mạc Arrakis khắc nghiệt tưởng như sẽ là nơi chôn vùi vĩnh viễn vinh quang của gia tộc Atreides, nhưng hóa ra lại thành điểm khởi đầu cho một huyền thoại mới…</p>
+      
+      <p>Là một trong những cuốn tiểu thuyết khoa học giả tưởng bán chạy nhất mọi thời đại, Xứ Cát không chỉ là lựa chọn đối với những tín đồ của Chúa nhẫn, Chiến tranh giữa các vì sao… mà còn chinh phục độc giả đủ mọi lứa tuổi, mọi tầng lớp và sở thích bởi sự đa dạng và phức tạp của con người và không gian trong truyện, bởi sự tinh tế trong xây dựng tâm lý, bởi sự hấp dẫn, căng thẳng và bất ngờ của cốt truyện, bởi sự độc đáo và thú vị của khối lượng kiến thức khổng lồ cũng như bởi sự hấp dẫn trong những tư tưởng về tôn giáo, về tự do, về tình yêu, về sự sống và cái chết…</p>
+    </div>
+    
+    <div class="book-info-detail">
+      <h2>Thông tin chi tiết</h2>
+      <ul>
+        <li><strong>Tác giả:</strong> FRANK HERBERT</li>
+        <li><strong>Dịch giả:</strong> Trần Tiễn Cao Đăng</li>
+        <li><strong>Nhà xuất bản:</strong> Hội Nhà Văn</li>
+        <li><strong>Kích thước:</strong> 15.5 x 24 cm</li>
+        <li><strong>Số trang:</strong> 714</li>
+        <li><strong>Ngày phát hành:</strong> 2021</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+  <section class="suggestions">
+    <div class="suggestions-header">
+        <h2>Có thể bạn cũng thích</h2>
+        <a href="#" class="see-more">Xem thêm →</a>
+      </div>
+      <div class="book-list">
+      <div class="book-item">
+        <a href="https://phong1807.github.io/TieuThuyet2/"><img src="img/me-cung-cua-linh-hon-01.webp" alt="Mê cung linh hồn"></a>
+        <a href="https://phong1807.github.io/TieuThuyet2/" class="title">Mê cung linh hồn</a>
+        <p class="price">313.650đ <span class="old-price">369.000đ</span></p>
+      </div>
+      <div class="book-item">
+        <a href="https://phong1807.github.io/TieuThuyet3/"><img src="./img/giet-con-chim-nhai-new3.webp" alt="Giết Con Chim Nhại  "></a>
+        <a href="https://phong1807.github.io/TieuThuyet3/" class="title">Giết Con Chim Nhại  </a>
+        <p class="price">196.000đ <span class="old-price">236.000đ</span></p>
+      </div>
+      <div class="book-item">
+        <a href="https://phong1807.github.io/TieuThuyet4/"><img src="./img/tramnamcodon01-0ce89a31-455d-4492-b0ce-1f6329222273.webp" alt="Trăm năm cô đơn"></a>
+        <a href="https://phong1807.github.io/TieuThuyet4/" class="title">Trăm năm cô đơn</a>
+        <p class="price">159.000đ <span class="old-price">199.000đ</span></p>
+      </div>
+      <div class="book-item">
+        <a href="https://phong1807.github.io/TieuThuyet1/"><img src="./img/dai-gia-gatsby-new-bia-mem-01.webp" alt="Đại gia Gatsby"></a>
+        <a href="https://phong1807.github.io/TieuThuyet1/" class="title">Đại gia Gatsby</a>
+        <p class="price">50.000đ <span class="old-price">86.000đ</span></p>
+      </div>
+    
+    </div>
+  </section>
+</div>
+  
+<script src="script.js"></script>
+</body>
+</html>
+
+

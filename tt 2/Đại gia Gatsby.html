@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ĐẠI GIA GATSBY</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="breadcrumb">
+      <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt;
+      <a href="tieuthuyet.html">Tiểu thuyết</a> &gt;
+      <span class="current">ĐẠI GIA GATSBY </span>
+    </div>
+
+    <div class="container">
+      <div class="book-detail">
+        <div class="book-image">
+          <img
+            src="./img/dai-gia-gatsby-new-bia-mem-01.webp"
+            alt="Bìa sách ĐẠI GIA GATSBY"
+          />
+        </div>
+        <div class="book-info">
+          <h1>ĐẠI GIA GATSBY</h1>
+          <p><strong>Tác giả:</strong> F.SCOTT FITZGERALD</p>
+          <div class="price-box">
+            <span class="discount-price">73.100₫</span>
+            <span class="original-price">86.000₫</span>
+            <span class="discount-percent">-15%</span>
+          </div>
+          <div class="stock">
+            <button onclick="decrease()">-</button>
+            <input type="number" id="qty" value="1" min="1" max="100" />
+            <button onclick="increase()">+</button>
+            <span>Còn lại 100 trong kho</span>
+          </div>
+          <div class="buttons">
+            <button class="add">Thêm vào giỏ hàng</button>
+            <button class="buy">Mua ngay</button>
+          </div>
+          <div class="marketplace">
+            <p>Mua sách trên sàn TMDT</p>
+            <img
+              src="./img/1685525042lazada-app-logo.webp"
+              alt="Lazada"
+              height="24"
+            />
+            <img src="./img/shoppe.png" alt="Shopee" height="24" />
+          </div>
+        </div>
+      </div>
+
+      <div class="book-desc">
+        <h2>Giới thiệu sách</h2>
+        <p>
+          Phất lên nhanh chóng từ chỗ "hàn vi", Gastby, nhân vật chính của câu
+          chuyện, những tưởng sẽ có được tất cả - tiền bạc, quyền lực, và sau
+          rốt là tình yêu -, nhưng rồi cái ảo tưởng tình yêu đó tan vỡ thật đau
+          đớn, theo sau là một kết cục kinh hoàng của Gastby. Là bức chân dung
+          của "Thời đại Jazz" (Jazz Age, cái tên do chính Fitzgerald đặt cho
+          thời kỳ 1918-1929), Đại gia Gatsby nắm bắt vô cùng sâu sắc tinh thần
+          của thế hệ cùng thời ông: những nỗi ám ảnh thường trực về sự thành
+          đạt, tiền bạc, sang trọng, dư dật, hào nhoáng; song đồng thời là nỗi
+          lo âu trước thói sùng bái vật chất vô hạn độ và sự thiếu vắng đạo đức
+          đang ngày một lên ngôi ở thời kỳ này. Đại gia Gatsby đã được đưa vào
+          giảng dạy ở trường phổ thông và đại học tại Mỹ cũng như nhiều nước
+          trên thế giới. Cuốn tiểu thuyết "khác thường, tuyệt đẹp, cấu trúc phức
+          tạp song trên hết là giản dị" (như lời chính nhà văn) từng được xếp
+          thứ hai trong danh sách 100 Tiểu thuyết Hay nhất Thế kỷ 20 của Modern
+          Library. Tạp chí Time thì đưa cuốn sách này vào danh sách 100 tiểu
+          thuyết hay nhất bằng tiếng Anh từ 1923 đến 2005 do Time bình chọn.
+        </p>
+      </div>
+
+      <div class="book-info-detail">
+        <h2>Thông tin chi tiết</h2>
+        <ul>
+          <li><strong>Tác giả:</strong> F.SCOTT FITZGERALD</li>
+          <li><strong>Dịch giả:</strong> Trịnh Lữ</li>
+          <li><strong>Nhà xuất bản:</strong> Hội Nhà Văn</li>
+          <li><strong>Kích thước:</strong> 15.5 x 24 cm</li>
+          <li><strong>Số trang:</strong> 260</li>
+          <li><strong>Ngày phát hành:</strong> 2022</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="suggestions">
+        <div class="suggestions-header">
+          <h2>Có thể bạn cũng thích</h2>
+          <a href="#" class="see-more">Xem thêm →</a>
+        </div>
+        <div class="book-list">
+          <div class="book-item">
+            <a href="https://phong1807.github.io/TieuThuyet2/"
+              ><img
+                src="img/me-cung-cua-linh-hon-01.webp"
+                alt="Mê cung linh hồn"
+            /></a>
+            <a href="https://phong1807.github.io/TieuThuyet2/" class="title"
+              >Mê cung linh hồn</a
+            >
+            <p class="price">
+              313.650đ <span class="old-price">369.000đ</span>
+            </p>
+          </div>
+          <div class="book-item">
+            <a href="https://phong1807.github.io/TieuThuyet3/"
+              ><img
+                src="./img/giet-con-chim-nhai-new3.webp"
+                alt="Giết Con Chim Nhại  "
+            /></a>
+            <a href="https://phong1807.github.io/TieuThuyet3/" class="title"
+              >Giết Con Chim Nhại
+            </a>
+            <p class="price">
+              196.000đ <span class="old-price">236.000đ</span>
+            </p>
+          </div>
+          <div class="book-item">
+            <a href="https://phong1807.github.io/TieuThuyet4/"
+              ><img
+                src="./img/tramnamcodon01-0ce89a31-455d-4492-b0ce-1f6329222273.webp"
+                alt="Trăm năm cô đơn"
+            /></a>
+            <a href="https://phong1807.github.io/TieuThuyet4/" class="title"
+              >Trăm năm cô đơn</a
+            >
+            <p class="price">
+              159.000đ <span class="old-price">199.000đ</span>
+            </p>
+          </div>
+          <div class="book-item">
+            <a href="https://phong1807.github.io/TieuThuyet5/"
+              ><img src="./img/xucatbiamembia.webp" alt="DUNE - Xứ Cát"
+            /></a>
+            <a href="https://phong1807.github.io/TieuThuyet5/" class="title"
+              >DUNE - Xứ Cát</a
+            >
+            <p class="price">
+              211.650đ <span class="old-price">249.000đ</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
