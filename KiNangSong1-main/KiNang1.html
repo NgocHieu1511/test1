@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>90 ngày cùng con dậy thì tỏa sáng</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/Sach.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../javascript/common.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- LOGO -->
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+        </div>
+        <!-- MENU -->
+        <!-- HAMBURGER MENU BUTTON -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="inner-menu">
+          <ul>
+            <li><a href="../html/main.html">Trang chủ</a></li>
+            <li><a href="../html/introduction.html">Giới thiệu</a></li>
+            <li>
+              <a href="#">Thể loại</a>
+              <ul class="submenu">
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Văn học</a></li>
+                <li><a href="#">Truyện tranh</a></li>
+                <li><a href="#">Kỹ Năng sống</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="../html/contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <div class="search-box" id="searchBox">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i class="fas fa-search icon" onclick="toggleSearch()"></i>
+          </div>
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart"
+              ><ul class="shopping-cart-box">
+                <li>
+                  <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
+                </li>
+              </ul></i
+            >
+          </div>
+
+          <div class="accountIcon">
+            <i class="fa-regular fa-circle-user"></i>
+            <ul class="accountMenu">
+              <li><a href="#">Đăng ký</a></li>
+              <li><a href="#">Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- hết phần header -->
+    <div class="inner-container">
+      <div class="breadcrumb">
+        <a href="../html/main.html">Trang chủ</a> &gt;
+        <a href="tieuthuyet.html">Truyện Tranh</a> &gt;
+        <span class="current">90 ngày cùng con dậy thì tỏa sáng </span>
+      </div>
+
+      <div class="container">
+        <div class="book-detail">
+          <div class="book-image">
+            <img
+              src="img/bo-sach-chuan-20221013033151-vnpgu.png"
+              alt="Bìa sách 90 ngày cùng con dậy thì tỏa sáng"
+            />
+          </div>
+          <div class="book-info">
+            <h1>90 ngày cùng con dậy thì tỏa sáng</h1>
+            <p><strong>Tác giả:</strong> WEGROW</p>
+            <div class="price-box">
+              <span class="discount-price">479.000₫</span>
+              <span class="original-price">500.000₫</span>
+              <span class="discount-percent">-15%</span>
+            </div>
+            <div class="stock">
+              <button onclick="decrease()">-</button>
+              <input type="number" id="qty" value="1" min="1" max="100" />
+              <button onclick="increase()">+</button>
+              <span>Còn lại 100 trong kho</span>
+            </div>
+            <div class="buttons">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="buy">Mua ngay</button>
+            </div>
+            <div class="marketplace">
+              <p>Mua sách trên sàn TMDT</p>
+              <img
+                src="./img/1685525042lazada-app-logo.webp"
+                alt="Lazada"
+                height="24"
+              />
+              <img src="./img/shoppe.png" alt="Shopee" height="24" />
+            </div>
+          </div>
+        </div>
+
+        <div class="book-desc">
+          <h2>Giới thiệu sách</h2>
+          <p>
+            Con biết tránh xa các thói hư tật xấu và xây dựng mối quan hệ bạn bè
+            lành mạnh, tránh yêu sớm
+          </p>
+
+          <p>Con ngoan, biết ơn và nghe lời bố mẹ, yêu thương gia đình</p>
+
+          <p>
+            Thay đổi tư duy và nhận thức của con: chăm chỉ học tập, tự tin, tỏa
+            sáng
+          </p>
+        </div>
+
+        <div class="book-info-detail">
+          <h2>Thông tin chi tiết</h2>
+          <ul>
+            <li><strong>Tác giả:</strong> WEGROW</li>
+            <li><strong>Dịch giả:</strong></li>
+            <li><strong>Nhà xuất bản:</strong></li>
+            <li><strong>Kích thước:</strong> 14x20.5cm</li>
+            <li><strong>Số trang:</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <section class="suggestions">
+          <div class="suggestions-header">
+            <h2>Có thể bạn cũng thích</h2>
+            <a href="#" class="see-more">Xem thêm →</a>
+          </div>
+          <div class="book-list">
+            <div class="book-item">
+              <a href="https://phong1807.github.io/KiNangSong2/"
+                ><img src="img/13640125.jpg" alt="Hiều về trái tim "
+              /></a>
+              <a href="https://phong1807.github.io/KiNangSong2/" class="title"
+                >Hiều về trái tim</a
+              >
+              <p class="price">
+                127.500đ <span class="old-price">158.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/KiNangSong3/"
+                ><img
+                  src="img/phattrienkynangxahoi50hoatdong.webp"
+                  alt="PHÁT TRIỂN KĨ NĂNG XÃ HỘI"
+              /></a>
+              <a href="https://phong1807.github.io/KiNangSong3/" class="title"
+                >PHÁT TRIỂN KĨ NĂNG XÃ HỘI</a
+              >
+              <p class="price">
+                144.750đ <span class="old-price">135.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/KiNangSong4/"
+                ><img src="img/dacnhantam86.jpg" alt="ĐẮC NHÂN TÂM"
+              /></a>
+              <a href="https://phong1807.github.io/KiNangSong4/" class="title"
+                >ĐẮC NHÂN TÂM</a
+              >
+              <p class="price">
+                85.000đ <span class="old-price">100.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/KiNangSong5/"
+                ><img
+                  src="img/tuoitredanggiabaonhieu01.webp"
+                  alt="TUỔI TRẺ ĐÁNG GIÁ BAO NHIÊU"
+              /></a>
+              <a href="https://phong1807.github.io/KiNangSong5/" class="title"
+                >TUỔI TRẺ ĐÁNG GIÁ BAO NHIÊU
+              </a>
+              <p class="price">
+                91.800đ <span class="old-price">108.000đ</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "../html/footer.html");
+      });
+    </script>
+    <script src="../javascript/main.js"></script>
+
+    <script src="../javascript/Sach.js"></script>
+  </body>
+</html>

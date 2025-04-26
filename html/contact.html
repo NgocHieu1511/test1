@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset css -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <!-- contact css -->
+    <link rel="stylesheet" href="../assets/css/contact.css" />
+    <title>Liên hệ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="../javascript/common.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- LOGO -->
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+        </div>
+        <!-- MENU -->
+        <!-- HAMBURGER MENU BUTTON -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="inner-menu">
+          <ul>
+            <li><a href="./main.html">Trang chủ</a></li>
+            <li><a href="./introduction.html">Giới thiệu</a></li>
+            <li>
+              <a href="#">Thể loại</a>
+              <ul class="submenu">
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Văn học</a></li>
+                <li><a href="#">Truyện tranh</a></li>
+                <li><a href="#">Kỹ Năng sống</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <div class="search-box" id="searchBox">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i class="fas fa-search icon" onclick="toggleSearch()"></i>
+          </div>
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart"
+              ><ul class="shopping-cart-box">
+                <li>
+                  <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
+                </li>
+              </ul></i
+            >
+          </div>
+
+          <div class="accountIcon">
+            <i class="fa-regular fa-circle-user"></i>
+            <ul class="accountMenu">
+              <li><a href="#">Đăng ký</a></li>
+              <li><a href="#">Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- hết phần header -->
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a class="home" href="./main.html">Trang chủ</a
+        ><span>
+          <i class="fa-solid fa-caret-right" style="color: #333"></i> </span
+        ><a href="./contact.html" style="color: #42d9a5">Liên hệ</a>
+      </div>
+      <div class="inner-contact">
+        <div class="form">
+          <h2>LIÊN HỆ</h2>
+          <p class="hotline">19006750</p>
+          <p class="workdays">Làm việc từ Thứ 2 - Thứ 6 hàng tuần</p>
+          <p class="support-msg">
+            Bạn cần trợ giúp, hãy gửi lời nhắn cho chúng tôi
+          </p>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Họ và tên" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Nội dung" required></textarea>
+            <button type="submit">Gửi liên hệ</button>
+          </form>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.6573257010714!2d105.78236330963209!3d21.046392987094116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abb158a2305d%3A0x5c357d21c785ea3d!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyDEkGnhu4duIEzhu7Fj!5e0!3m2!1svi!2s!4v1745364799186!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "footer.html");
+      });
+    </script>
+    <script src="../javascript/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset css -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+
+    <title>DHP Books</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="../javascript/common.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- LOGO -->
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+        </div>
+        <!-- MENU -->
+        <!-- HAMBURGER MENU BUTTON -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="inner-menu">
+          <ul>
+            <li><a href="./main.html">Trang chủ</a></li>
+            <li><a href="./introduction.html">Giới thiệu</a></li>
+            <li>
+              <a href="#">Thể loại</a>
+              <ul class="submenu">
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Văn học</a></li>
+                <li><a href="#">Truyện tranh</a></li>
+                <li><a href="#">Kỹ Năng sống</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <div class="search-box" id="searchBox">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i class="fas fa-search icon" onclick="toggleSearch()"></i>
+          </div>
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart"
+              ><ul class="shopping-cart-box">
+                <li>
+                  <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
+                </li>
+              </ul></i
+            >
+          </div>
+
+          <div class="accountIcon">
+            <i class="fa-regular fa-circle-user"></i>
+            <ul class="accountMenu">
+              <li><a href="#">Đăng ký</a></li>
+              <li><a href="#">Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- hết phần header -->
+    <div class="container">
+      <div class="slide">
+        <div class="dieuhuong">
+          <i class="fa-solid fa-circle-arrow-left" onclick="Back();"></i
+          ><i class="fa-solid fa-circle-arrow-right" onclick="Next();"></i>
+        </div>
+        <div class="chuyen-slide">
+          <img src="../assets/img/banner/banner2.jpg" alt="ẢNH 1" />
+          <img src="../assets/img/banner/banner6.jpg" alt="ẢNH 2" />
+          <img src="../assets/img/banner/banner3.jpg" alt="ẢNH 3" />
+          <img src="../assets/img/banner/banner4.jpg" alt="ẢNH 4" />
+        </div>
+      </div>
+      <div class="swiper-wraper">
+        <div>
+          <i class="fa-solid fa-truck-fast"></i> <br /><span
+            >Giao hàng miễn phí</span
+          >
+        </div>
+        <div>
+          <i class="fa-solid fa-box"></i><br /><span>Đặt hàng nhanh chóng</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-award"></i><br /><span>Giá tiêu chuẩn</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-spinner"></i><br /><span
+            >Đổi trả trong 3 ngày</span
+          >
+        </div>
+      </div>
+      <br />
+      <div class="best-seller">
+        <div class="best-seller-title">
+          <div class="divider-line1"></div>
+          <h2>
+            <i class="fa-solid fa-heart" style="color: #e95060"></i> SÁCH NỔI
+            BẬT
+          </h2>
+          <div class="divider-line1"></div>
+
+          <!-- <a href="#" class="btn btn-view-all">View all</a> -->
+        </div>
+        <div class="best-seller-items">
+          <a
+            href="../LTWEB-main/Nội dung sách/Văn học/Để tâm không bận/index.html"
+            class="book1"
+          >
+            <img src="../assets/img/best-seller books/de-tam.jpg" alt="best1" />
+
+            <h3>Để tâm không bận</h3>
+            <!-- <p class="author">Ryunosuke Koike</p> -->
+            <!-- <div class="stars">
+              <span
+                ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ></span>
+              <span
+                ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ></span>
+              <span
+                ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ></span>
+              <span
+                ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ></span>
+              <span
+                ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ></span>
+            </div> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </a>
+          <a
+            href="./LTWEB-main/Nội dung sách/Kinh doanh/Think and Grow Rich/index.html"
+            class="book2"
+          >
+            <img src="../assets/img/Business-books/sach3.jpg" alt="best2" />
+            <h3>Think and grow rich</h3>
+            <!-- <p class="author">Kazumi Yumoto</p> -->
+            <p class="price">
+              <span class="old-price">200.000đ</span
+              ><span class="new-price">99.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </a>
+          <a
+            href="./LTWEB-main/Nội dung sách/Văn học/Nếu biết trăm năm là hữu hạn/index.html"
+            class="book3"
+          >
+            <img
+              src="../assets/img/best-seller books/neu-biet.jpg"
+              alt="best3"
+            />
+            <h3>Nếu biết trăm năm là hữu hạn</h3>
+            <!-- <p class="author">Phạm Lữ Ân</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </a>
+          <a
+            href="./LTWEB-main/Nội dung sách/Văn học/Ngày Xưa Có Một Chuyện Tình/index.html"
+            class="book4"
+          >
+            <img
+              src="../assets/img/best-seller books/ngay-xua-co-mot-chuyen-tinh.jpg"
+              alt="best4"
+            />
+            <h3>Ngày xưa có 1 truyện tình</h3>
+            <!-- <p class="author">Nguyễn Nhật Ánh</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </a>
+          <a
+            href="./LTWEB-main/Nội dung sách/Văn học/Ngày Xưa Có Một Chuyện Tình/index.html"
+            class="book5"
+          >
+            <img
+              src="../assets/img/best-seller books/ngay-xua.jpg"
+              alt="best5"
+            />
+            <h3>Ngày xưa có 1 truyện tình</h3>
+            <!-- <p class="author">Nguyễn Nhật Ánh</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </a>
+        </div>
+      </div>
+      <div class="business-books inner-books">
+        <div class="business-books-title inner-title">
+          <span class="highlight-bar"></span>
+          <h3>SÁCH KINH DOANH</h3>
+          <div class="divider-line"></div>
+          <a href="#" class="btn-view-all">Xem tất cả</a>
+        </div>
+        <div class="business-books-items">
+          <div class="businessBook1">
+            <img
+              src="../assets/img/Business-books/sach1.jpg"
+              alt="business-books1"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Kinh doanh/Think and Grow Rich/index.html"
+                >Think and grow rich</a
+              >
+            </h4>
+            <!-- <p class="author">Napoleon Hill</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="businessBook2">
+            <img
+              src="../assets/img/Business-books/sach2.jpg"
+              alt="business-books2"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Kinh doanh/Thói quen để trở thành tỷ phú/index.html"
+                >Thói quen để trở thành tỉ phú</a
+              >
+            </h4>
+            <!-- <p class="author">John Lee</p> -->
+            <p class="price">
+              <span class="old-price">159.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="businessBook3">
+            <img
+              src="../assets/img/Business-books/sach3.jpg"
+              alt="business-books3"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Kinh doanh/Nghề tay trái không tay trắng/index.html"
+                >Nghề tay trái không tay trắng</a
+              >
+            </h4>
+            <!-- <p class="author">Vương Đông</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="businessBook4">
+            <img
+              src="../assets/img/Business-books/sach4.jpg"
+              alt="business-books4"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Kinh doanh/Đầu tư dễ như đi xe đạp - Tập 1 Nền tảng/index.html"
+                >Đầu tư dễ như đi xe đạp</a
+              >
+            </h4>
+            <!-- <p class="author">Trọng Nghĩa</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="businessBook5">
+            <img
+              src="../assets/img/Business-books/sach5.jpg"
+              alt="business-books5"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Kinh doanh/Nguyên tắc tuyệt đối trong đầu tư cổ phiếu/index.html"
+                >Nguyên tắc tuyệt đối trong đầu tư cổ phiếu</a
+              >
+            </h4>
+            <!-- <p class="author">Park Young Ok</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="Comic-books inner-books">
+        <div class="Comic-books-title inner-title">
+          <span class="highlight-bar"></span>
+          <h3>TRUYỆN TRANH</h3>
+          <div class="divider-line"></div>
+          <a href="#" class="btn-view-all">Xem tất cả</a>
+        </div>
+        <div class="Comic-books-items">
+          <div class="ComicBook1">
+            <img
+              src="../assets/img/Comic/434866892979186923874283778801.webp"
+              alt="Comic-books1"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Truyện Tranh/NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI/index.html"
+                >Những bài học cuộc sống từ đám mèo nhà tôi</a
+              >
+            </h4>
+            <!-- <p class="author">Napoleon Hill</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="ComicBook2">
+            <img
+              src="../assets/img/Comic/cong-chua-toc-cam-yeu-duong-vui-phet-tru-nhung-luc-khong-01.webp"
+              alt="Comic-books2"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Truyện Tranh/CÔNG CHÚA TÓC CAM - YÊU ĐƯƠNG VUI PHẾT (TRỪ NHỮNG LÚC KHÔNG) - Copy (3)/index.html"
+                >Công chúa tóc cam</a
+              >
+            </h4>
+            <!-- <p class="author">John Lee</p> -->
+            <p class="price">
+              <span class="old-price">159.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="ComicBook3">
+            <img
+              src="../assets/img/Comic/nam-thang-dang-dang-chang-co-ngay-nao-thich-hop-di-lam-convert-01.webp"
+              alt="Comic-books3"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Truyện Tranh/NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM/index.html"
+                >Năm tháng đằng đẵng chẳng có ngày nào thích hợp đi nào thích
+                hợp đi làm</a
+              >
+            </h4>
+            <!-- <p class="author">Vương Đông</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="ComicBook4">
+            <img
+              src="../assets/img/Comic/thegioikhonghoiket01e172051664.webp"
+              alt="Comic-books4"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Truyện Tranh/THẾ GIỚI KHÔNG HỒI KẾT/index.html"
+                >Thế giới không hồi kết</a
+              >
+            </h4>
+            <!-- <p class="author">Trọng Nghĩa</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="ComicBook5">
+            <img
+              src="../assets/img/Comic/toi-ngay-cang-yeu-thich-ban-than-01.webp"
+              alt="Comic-books5"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Truyện Tranh/TÔI NGÀY CÀNG YÊU THÍCH BẢN THÂN/index.html"
+                >Tôi ngày càng yêu thích bản thân</a
+              >
+            </h4>
+            <!-- <p class="author">Park Young Ok</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="novel inner-books">
+        <div class="novel-title inner-title">
+          <span class="highlight-bar"></span>
+          <h3>TIỂU THUYẾT</h3>
+          <div class="divider-line"></div>
+          <a href="#" class="btn-view-all">Xem tất cả</a>
+        </div>
+        <div class="novel-items">
+          <div class="Novel1">
+            <img src="../assets/img/novel/xucatbiamembia.webp" alt="Novel1" />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Tiểu thuyết/DUNE - Xứ Cát/index.html"
+                >Xứ cát</a
+              >
+            </h4>
+            <!-- <p class="author">Napoleon Hill</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="Novel2">
+            <img
+              src="../assets/img/novel/dai-gia-gatsby-new-bia-mem-01.webp"
+              alt="Novel2"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Tiểu thuyết/Đại gia Gatsby/index.html"
+                >Đại gia Gatsby</a
+              >
+            </h4>
+            <!-- <p class="author">John Lee</p> -->
+            <p class="price">
+              <span class="old-price">159.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="Novel3">
+            <img
+              src="../assets/img/novel/giet-con-chim-nhai-new3.webp"
+              alt="Novel3"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Tiểu thuyết/Giết con chim nhạn/index.html"
+                >Giết con chim nhại</a
+              >
+            </h4>
+            <!-- <p class="author">Vương Đông</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="Novel4">
+            <img
+              src="../assets/img/novel/me-cung-cua-linh-hon-01.webp"
+              alt="Novel4"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Tiểu thuyết/Mê cung linh hồn/index.html"
+                >Mê cung của linh hồn</a
+              >
+            </h4>
+            <!-- <p class="author">Trọng Nghĩa</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+          <div class="Novel5">
+            <img
+              src="../assets/img/novel/tramnamcodon01-0ce89a31-455d-4492-b0ce-1f6329222273.webp"
+              alt="Novel5"
+            />
+            <h4>
+              <a
+                href="./LTWEB-main/Nội dung sách/Tiểu thuyết/Trăm năm cô đơn/index.html"
+                >Trăm năm cô đơn</a
+              >
+            </h4>
+            <!-- <p class="author">Park Young Ok</p> -->
+            <p class="price">
+              <span class="old-price">100.000đ</span
+              ><span class="new-price">50.000đ</span>
+            </p>
+            <!-- <button class="#">Mua ngay</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="News">
+        <div class="News-title">
+          <div class="divider-line1"></div>
+          <i class="fa-solid fa-bars" style="color: #333"></i>
+          <h3>Tin Tức</h3>
+          <div class="divider-line1"></div>
+        </div>
+        <div class="News-box">
+          <a
+            href="./LTWEB-main/Nội dung tin tức/Tin 1/index.html"
+            class="New1 news"
+          >
+            <img
+              src="./LTWEB-main/Nội dung tin tức/Tin 1/img/ảnh 1.webp"
+              alt="new1"
+            />
+            <h4>
+              Sự kiện giới thiệu tác phẩm "Dọc đường 2" và gặp gỡ nhà văn Nguyên
+              Ngọc
+            </h4>
+            <p>
+              Tới đây, trong khuôn khổ tuần lễ các hoạt động tại Đà Nẵng, Nhã
+              Nam trân trọng phối hợp cùng Khoa Ngữ văn [...]
+            </p>
+          </a>
+          <a
+            href="./LTWEB-main/Nội dung tin tức/Tin 2/index.html"
+            class="New2 news"
+          >
+            <img
+              src="./LTWEB-main/Nội dung tin tức/Tin 2/img/l_bef7e2b1-f3a8-4b92-b2f6-7bb9ba626343.jpg"
+              alt="new2"
+            />
+            <h4>Sự kiện: Ra mắt cuốn sách "Khi con chip lên ngôi"</h4>
+            <p>
+              Cuộc đua công nghệ đang nóng hơn bao giờ hết. Giữa bối cảnh trật
+              tự công nghệ mới đang dần hình thành, đâu là cơ hội và thách thức
+              cho Việt Nam?[...]
+            </p>
+          </a>
+          <a
+            href="./LTWEB-main/Nội dung tin tức/Tin 3/index.html"
+            class="New3 news"
+          >
+            <img
+              src="./LTWEB-main/Nội dung tin tức/Tin 3/img/sukien.jpg"
+              alt="new3"
+            />
+            <h4>Sự kiện: NHỮNG CÂU CHUYỆN NGHỀ PHÁP Y</h4>
+            <p>
+              Mạng xã hội và các nền tảng giải trí trực tuyến mỗi ngày đều tràn
+              ngập nội dung về điều tra hình sự và pháp y, thế nhưng công chúng
+              lại đang đứng trước một "cơn khát" thông tin chuyên sâu về lĩnh
+              vực này[...]
+            </p>
+          </a>
+          <a
+            href="./LTWEB-main/Nội dung tin tức/Tin 4/index.html"
+            class="New4 news"
+          >
+            <img
+              src="./LTWEB-main/Nội dung tin tức/Tin 4/img/website-a-nh-da-i-die-n-ba-i-vie-t-17-58e04cb3-e898-4acb-9aaf-0c17c13b8bec.webp"
+              alt="new4"
+            />
+            <h4>
+              Trò chuyện về cuốn sách: Chuyện nhà Tí của nhà văn Phan Thị Vàng
+              Anh
+            </h4>
+            <p>
+              Nhà văn Phan Thị Vàng Anh là cái tên không còn xa lạ với độc giả
+              Việt Nam[...]
+            </p>
+          </a>
+        </div>
+        <a href="./LTWEB-main/Tin Tức/Trang 1/index.html" class="News-more"
+          >Xem tất cả</a
+        >
+      </div>
+      <div class="Comment">
+        <div class="Comment-title">
+          <div class="divider-line1"></div>
+          <i class="fa-solid fa-user"></i>
+          <h3>KHÁCH HÀNG NÓI VỀ CHÚNG TÔI</h3>
+          <div class="divider-line1"></div>
+        </div>
+        <div class="Comment-box">
+          <div class="Inner-comment">
+            <div class="rating">
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+            </div>
+            <p>
+              Mình đặt sách hôm thứ Hai và chỉ sau 2 ngày đã nhận được hàng.
+              Đóng gói rất cẩn thận, sách không bị móp hay rách. Nội dung sách
+              thì khỏi bàn, giấy in rõ ràng, không có lỗi chính tả. Rất hài lòng
+              với trải nghiệm mua hàng lần này, chắc chắn sẽ quay lại!
+            </p>
+            <div class="customer-info">
+              <img src="../assets/img/avatar/avatar.png" alt="Avatar" />
+              <div>
+                <strong>Cristiano Ronaldo</strong><br />
+                <small>23/04/2025</small>
+              </div>
+            </div>
+          </div>
+          <div class="Inner-comment">
+            <div class="rating">
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+            </div>
+            <p>
+              Website dễ dùng, tìm sách nhanh, thanh toán cũng tiện lợi. Tuy
+              nhiên, mình nghĩ nên cập nhật tình trạng kho thường xuyên hơn vì
+              cuốn mình muốn ban đầu hết hàng. Dù sao, khi đặt được sách rồi thì
+              nhận hàng nhanh, sách mới và đẹp.
+            </p>
+            <div class="customer-info">
+              <img src="../assets/img/avatar/avatar2.png" alt="Avatar" />
+              <div>
+                <strong>Lionel Messi</strong><br />
+                <small>23/04/2025</small>
+              </div>
+            </div>
+          </div>
+          <div class="Inner-comment">
+            <div class="rating">
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+              <i class="fas fa-star" style="color: #fcd34d"></i>
+            </div>
+            <p>
+              Mình rất thích dịch vụ hỗ trợ khách hàng ở đây. Lúc đặt nhầm phiên
+              bản bìa mềm, mình liên hệ và được đổi sang bìa cứng ngay trong
+              ngày. Sách in sắc nét, giấy trắng đẹp, đóng gáy chắc chắn. Mua
+              online mà cảm giác như đi hiệu sách vậy!
+            </p>
+            <div class="customer-info">
+              <img src="../assets/img/avatar/avatar3.png" alt="Avatar" />
+              <div>
+                <strong class="name">Neymar</strong><br />
+                <small class="date">23/04/2025</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="Comment-more">Xem tất cả</a>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "footer.html");
+      });
+    </script>
+    <script src="../javascript/main.js"></script>
+  </body>
+</html>
