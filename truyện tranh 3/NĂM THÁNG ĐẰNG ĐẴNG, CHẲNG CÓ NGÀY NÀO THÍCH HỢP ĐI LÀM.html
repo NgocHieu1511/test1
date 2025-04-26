@@ -1,112 +1,226 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <title>NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
-</head>
-<body>
-  <div class="breadcrumb">
-    <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt; 
-    <a href="tieuthuyet.html">Truyện Tranh</a> &gt; 
-    <span class="current">NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM </span>
-  </div>
- 
-  <div class="container">
-    <div class="book-detail">
-      <div class="book-image">
-        <img src="img/nam-thang-dang-dang-chang-co-ngay-nao-thich-hop-di-lam-convert-01.webp" alt="Bìa sách NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/Sach.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script src="../javascript/common.js"></script>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- LOGO -->
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+        </div>
+        <!-- MENU -->
+        <!-- HAMBURGER MENU BUTTON -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="inner-menu">
+          <ul>
+            <li><a href="../html/index.html">Trang chủ</a></li>
+            <li><a href="../html/introduction.html">Giới thiệu</a></li>
+            <li>
+              <a href="#">Thể loại</a>
+              <ul class="submenu">
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Văn học</a></li>
+                <li><a href="#">Truyện tranh</a></li>
+                <li><a href="#">Kỹ Năng sống</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="../html/contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <div class="search-box" id="searchBox">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i class="fas fa-search icon" onclick="toggleSearch()"></i>
+          </div>
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart"
+              ><ul class="shopping-cart-box">
+                <li>
+                  <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
+                </li>
+              </ul></i
+            >
+          </div>
+
+          <div class="accountIcon">
+            <i class="fa-regular fa-circle-user"></i>
+            <ul class="accountMenu">
+              <li><a href="#">Đăng ký</a></li>
+              <li><a href="#">Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="book-info">
-        <h1>NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM</h1>
-        <p><strong>Tác giả:</strong> VĂN PHÒNG DỘNG VẬT</p>
-        <div class="price-box">
-          <span class="discount-price">118.150₫</span>
-          <span class="original-price">139.000₫</span>
-          <span class="discount-percent">-15%</span>
+    </header>
+    <!-- hết phần header -->
+    <div class="inner-container">
+      <div class="breadcrumb">
+        <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt;
+        <a href="tieuthuyet.html">Truyện Tranh</a> &gt;
+        <span class="current"
+          >NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM
+        </span>
+      </div>
+
+      <div class="container">
+        <div class="book-detail">
+          <div class="book-image">
+            <img
+              src="img/nam-thang-dang-dang-chang-co-ngay-nao-thich-hop-di-lam-convert-01.webp"
+              alt="Bìa sách NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM"
+            />
+          </div>
+          <div class="book-info">
+            <h1>NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM</h1>
+            <p><strong>Tác giả:</strong> VĂN PHÒNG DỘNG VẬT</p>
+            <div class="price-box">
+              <span class="discount-price">118.150₫</span>
+              <span class="original-price">139.000₫</span>
+              <span class="discount-percent">-15%</span>
+            </div>
+            <div class="stock">
+              <button onclick="decrease()">-</button>
+              <input type="number" id="qty" value="1" min="1" max="100" />
+              <button onclick="increase()">+</button>
+              <span>Còn lại 100 trong kho</span>
+            </div>
+            <div class="buttons">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="buy">Mua ngay</button>
+            </div>
+            <div class="marketplace">
+              <p>Mua sách trên sàn TMDT</p>
+              <img
+                src="./img/1685525042lazada-app-logo.webp"
+                alt="Lazada"
+                height="24"
+              />
+              <img src="./img/shoppe.png" alt="Shopee" height="24" />
+            </div>
+          </div>
         </div>
-        <div class="stock">
-          <button onclick="decrease()">-</button>
-          <input type="number" id="qty" value="1" min="1" max="100">
-          <button onclick="increase()">+</button>
-          <span>Còn lại 100 trong kho</span>
+
+        <div class="book-desc">
+          <h2>Giới thiệu sách</h2>
+          <p>
+            Ngày mưa hợp đi ngủ Ngày nắng hợp tắm nắng Ngày gió hợp ra ngoài tha
+            thẩn Năm tháng đằng đẵng, chẳng có ngày nào thích hợp đi làm
+          </p>
+
+          <p>
+            Cuốn sách này sẽ tái hiện trạng thái vô cùng chân thực của những con
+            người nơi công sở: cuộc sống vất vả, buồn ngủ tới muốn hôn mê, công
+            việc chất thành đống, thôi làm cốc cà phê. Đây được coi như một món
+            quà dành cho những "người lớn không vui" vẫn đang hàng ngày đối diện
+            với những vất vả trong guồng quay cuộc sống.
+          </p>
         </div>
-        <div class="buttons">
-          <button class="add">Thêm vào giỏ hàng</button>
-          <button class="buy">Mua ngay</button>
+
+        <div class="book-info-detail">
+          <h2>Thông tin chi tiết</h2>
+          <ul>
+            <li><strong>Tác giả:</strong> VĂN PHÒNG DỘNG VẬT</li>
+            <li><strong>Dịch giả:</strong> SỨA</li>
+            <li><strong>Nhà xuất bản:</strong> Dân Trí</li>
+            <li><strong>Kích thước:</strong> 14x20.5cm</li>
+            <li><strong>Số trang:</strong> 164</li>
+          </ul>
         </div>
-        <div class="marketplace">
-          <p>Mua sách trên sàn TMDT</p>
-          <img src="./img/1685525042lazada-app-logo.webp" alt="Lazada" height="24">
-          <img src="./img/shoppe.png" alt="Shopee" height="24">
-        </div>
+      </div>
+
+      <div class="container">
+        <section class="suggestions">
+          <div class="suggestions-header">
+            <h2>Có thể bạn cũng thích</h2>
+            <a href="#" class="see-more">Xem thêm →</a>
+          </div>
+          <div class="book-list">
+            <div class="book-item">
+              <a href="https://phong1807.github.io/TruyenTranh1/"
+                ><img
+                  src="img/cong-chua-toc-cam-yeu-duong-vui-phet-tru-nhung-luc-khong-01.webp"
+                  alt="CÔNG CHÚA TÓC CAM - YÊU ĐƯƠNG VUI PHẾT (TRỪ NHỮNG LÚC KHÔNG) "
+              /></a>
+              <a href="https://phong1807.github.io/TruyenTranh1/" class="title"
+                >CÔNG CHÚA TÓC CAM - YÊU ĐƯƠNG VUI PHẾT (TRỪ NHỮNG LÚC KHÔNG)</a
+              >
+              <p class="price">
+                118.150đ <span class="old-price">139.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/TruyenTranh3/"
+                ><img
+                  src="img/toi-ngay-cang-yeu-thich-ban-than-01.webp"
+                  alt="TÔI NGÀY CÀNG YÊU THÍCH BẢN THÂN"
+              /></a>
+              <a href="https://phong1807.github.io/TruyenTranh3/" class="title"
+                >TÔI NGÀY CÀNG YÊU THÍCH BẢN THÂN</a
+              >
+              <p class="price">
+                127.500đ <span class="old-price">150.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/TruyenTranh4/"
+                ><img
+                  src="img/434866892979186923874283778801.webp"
+                  alt="NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI"
+              /></a>
+              <a href="https://phong1807.github.io/TruyenTranh4/" class="title"
+                >NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI</a
+              >
+              <p class="price">
+                85.000đ <span class="old-price">100.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/TruyenTranh5/"
+                ><img
+                  src="img/thegioikhonghoiket01e172051664.webp"
+                  alt="THẾ GIỚI KHÔNG HỒI KẾT"
+              /></a>
+              <a href="https://phong1807.github.io/TruyenTranh5/" class="title"
+                >THẾ GIỚI KHÔNG HỒI KẾT</a
+              >
+              <p class="price">
+                255.000đ <span class="old-price">300.000đ</span>
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
-    <div class="book-desc">
-      <h2>Giới thiệu sách</h2>
-      <p>Ngày mưa hợp đi ngủ
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "../html/footer.html");
+      });
+    </script>
+    <script src="../javascript/main.js"></script>
 
-        Ngày nắng hợp tắm nắng
-        
-        Ngày gió hợp ra ngoài tha thẩn
-        
-        Năm tháng đằng đẵng, chẳng có ngày nào thích hợp đi làm</p>
-
-      <p>Cuốn sách này sẽ tái hiện trạng thái vô cùng chân thực của những con người nơi công sở: cuộc sống vất vả, buồn ngủ tới muốn hôn mê, công việc chất thành đống, thôi làm cốc cà phê.
-        
-        Đây được coi như một món quà dành cho những "người lớn không vui" vẫn đang hàng ngày đối diện với những vất vả trong guồng quay cuộc sống.</p>
-
-    </div>
-
-    <div class="book-info-detail">
-      <h2>Thông tin chi tiết</h2>
-      <ul>
-        <li><strong>Tác giả:</strong> VĂN PHÒNG DỘNG VẬT</li>
-        <li><strong>Dịch giả:</strong> SỨA </li>
-        <li><strong>Nhà xuất bản:</strong> Dân Trí</li>
-        <li><strong>Kích thước:</strong> 14x20.5cm</li>
-        <li><strong>Số trang:</strong> 164</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="container">
-  <section class="suggestions">
-    <div class="suggestions-header">
-        <h2>Có thể bạn cũng thích</h2>
-        <a href="#" class="see-more">Xem thêm →</a>
-      </div>
-      <div class="book-list">
-      <div class="book-item">
-        <a href="https://phong1807.github.io/TruyenTranh1/"><img src="img/cong-chua-toc-cam-yeu-duong-vui-phet-tru-nhung-luc-khong-01.webp" alt="CÔNG CHÚA TÓC CAM - YÊU ĐƯƠNG VUI PHẾT (TRỪ NHỮNG LÚC KHÔNG) "></a>
-        <a href="https://phong1807.github.io/TruyenTranh1/" class="title">CÔNG CHÚA TÓC CAM - YÊU ĐƯƠNG VUI PHẾT (TRỪ NHỮNG LÚC KHÔNG)</a>
-        <p class="price">118.150đ <span class="old-price">139.000đ</span></p>
-      </div>
-      <div class="book-item">
-        <a href="https://phong1807.github.io/TruyenTranh3/"><img src="img/toi-ngay-cang-yeu-thich-ban-than-01.webp" alt="TÔI NGÀY CÀNG YÊU THÍCH BẢN THÂN"></a>
-        <a href="https://phong1807.github.io/TruyenTranh3/" class="title">TÔI NGÀY CÀNG YÊU THÍCH BẢN THÂN</a>
-        <p class="price">127.500đ <span class="old-price">150.000đ</span></p>
-      </div>
-      <div class="book-item">
-        <a href="https://phong1807.github.io/TruyenTranh4/"><img src="img/434866892979186923874283778801.webp" alt="NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI"></a>
-        <a href="https://phong1807.github.io/TruyenTranh4/" class="title">NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI</a>
-        <p class="price">85.000đ <span class="old-price">100.000đ</span></p>
-      </div>
-      <div class="book-item">
-        <a href="https://phong1807.github.io/TruyenTranh5/"><img src="img/thegioikhonghoiket01e172051664.webp" alt="THẾ GIỚI KHÔNG HỒI KẾT"></a>
-        <a href="https://phong1807.github.io/TruyenTranh5/" class="title">THẾ GIỚI KHÔNG HỒI KẾT</a>
-        <p class="price">255.000đ <span class="old-price">300.000đ</span></p>
-      </div>
-    </div>
-  </section>
-</div>
-  
-<script src="script.js"></script>
-</body>
+    <script src="../javascript/Sach.js"></script>
+  </body>
 </html>
-
-

@@ -1,101 +1,220 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <title>Ngày Xưa Có Một Chuyện Tình </title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
-</head>
-<body>
-  <div class="breadcrumb">
-    <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt; 
-    <a href="tieuthuyet.html">Truyện Tranh</a> &gt; 
-    <span class="current">Ngày Xưa Có Một Chuyện Tình  </span>
-  </div>
- 
-  <div class="container">
-    <div class="book-detail">
-      <div class="book-image">
-        <img src="img/ngay_xua_co_mot_chuyen_tinh.png" alt="Bìa sách Ngày Xưa Có Một Chuyện Tình ">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ngày Xưa Có Một Chuyện Tình</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/Sach.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script src="../javascript/common.js"></script>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- LOGO -->
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+        </div>
+        <!-- MENU -->
+        <!-- HAMBURGER MENU BUTTON -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="inner-menu">
+          <ul>
+            <li><a href="../html/index.html">Trang chủ</a></li>
+            <li><a href="../html/introduction.html">Giới thiệu</a></li>
+            <li>
+              <a href="#">Thể loại</a>
+              <ul class="submenu">
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Văn học</a></li>
+                <li><a href="#">Truyện tranh</a></li>
+                <li><a href="#">Kỹ Năng sống</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="../html/contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <div class="search-box" id="searchBox">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i class="fas fa-search icon" onclick="toggleSearch()"></i>
+          </div>
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart"
+              ><ul class="shopping-cart-box">
+                <li>
+                  <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
+                </li>
+              </ul></i
+            >
+          </div>
+
+          <div class="accountIcon">
+            <i class="fa-regular fa-circle-user"></i>
+            <ul class="accountMenu">
+              <li><a href="#">Đăng ký</a></li>
+              <li><a href="#">Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="book-info">
-        <h1>Ngày Xưa Có Một Chuyện Tình </h1>
-        <p><strong>Tác giả:</strong> NGUYỄN NHẬT ÁNH</p>
-        <div class="price-box">
-          <span class="discount-price">65.450₫</span>
-          <span class="original-price">77.000₫</span>
-          <span class="discount-percent">-15%</span>
+    </header>
+    <!-- hết phần header -->
+    <div class="inner-container">
+      <div class="breadcrumb">
+        <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt;
+        <a href="tieuthuyet.html">Truyện Tranh</a> &gt;
+        <span class="current">Ngày Xưa Có Một Chuyện Tình </span>
+      </div>
+
+      <div class="container">
+        <div class="book-detail">
+          <div class="book-image">
+            <img
+              src="img/ngay_xua_co_mot_chuyen_tinh.png"
+              alt="Bìa sách Ngày Xưa Có Một Chuyện Tình "
+            />
+          </div>
+          <div class="book-info">
+            <h1>Ngày Xưa Có Một Chuyện Tình</h1>
+            <p><strong>Tác giả:</strong> NGUYỄN NHẬT ÁNH</p>
+            <div class="price-box">
+              <span class="discount-price">65.450₫</span>
+              <span class="original-price">77.000₫</span>
+              <span class="discount-percent">-15%</span>
+            </div>
+            <div class="stock">
+              <button onclick="decrease()">-</button>
+              <input type="number" id="qty" value="1" min="1" max="100" />
+              <button onclick="increase()">+</button>
+              <span>Còn lại 100 trong kho</span>
+            </div>
+            <div class="buttons">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="buy">Mua ngay</button>
+            </div>
+            <div class="marketplace">
+              <p>Mua sách trên sàn TMDT</p>
+              <img
+                src="./img/1685525042lazada-app-logo.webp"
+                alt="Lazada"
+                height="24"
+              />
+              <img src="./img/shoppe.png" alt="Shopee" height="24" />
+            </div>
+          </div>
         </div>
-        <div class="stock">
-          <button onclick="decrease()">-</button>
-          <input type="number" id="qty" value="1" min="1" max="100">
-          <button onclick="increase()">+</button>
-          <span>Còn lại 100 trong kho</span>
+
+        <div class="book-desc">
+          <h2>Giới thiệu sách</h2>
+          <p>
+            Đúng như tên gọi, đây là cuốn sách về tình yêu, được viết theo một
+            phong cách hoàn toàn khác lạ với nhà văn Nguyễn Nhật Ánh từ trước
+            đến nay. Tác phẩm phù hợp với đông đảo đối tượng độc giả và được Nhà
+            xuất bản Trẻ đầu tư mạnh về hình thức cũng như truyền thông, tiếp
+            thị...Ngày xưa có một chuyện tình là một câu chuyện cảm động khi
+            người ta yêu nhau, nỗi khát khao một hạnh phúc êm đềm ấm áp đến thế;
+            hay đơn giản chỉ là chuyện ba người - anh, em, và người ấy...? Khi
+            mở sách ra, độc giả sẽ được chứng kiến làn gió tình yêu chảy qua như
+            rải nắng trên khuôn mặt mùa đông của cô gái; nụ hôn đầu tiên ngọt
+            mật, cái ôm đầu tiên, những giọt nước mắt và cái ôm xiết cuối cùng
+            của tấm tình người yêu người...Và người đọc sẽ tìm thấy câu trả lời,
+            cho riêng mình.
+          </p>
         </div>
-        <div class="buttons">
-          <button class="add">Thêm vào giỏ hàng</button>
-          <button class="buy">Mua ngay</button>
+
+        <div class="book-info-detail">
+          <h2>Thông tin chi tiết</h2>
+          <ul>
+            <li><strong>Tác giả:</strong> NGUYỄN NHẬT ÁNH</li>
+            <li><strong>Dịch giả:</strong></li>
+            <li><strong>Nhà xuất bản:</strong> NXB Trẻ</li>
+            <li><strong>Kích thước:</strong> 14x20.5cm</li>
+            <li><strong>Số trang:</strong> 296</li>
+          </ul>
         </div>
-        <div class="marketplace">
-          <p>Mua sách trên sàn TMDT</p>
-          <img src="./img/1685525042lazada-app-logo.webp" alt="Lazada" height="24">
-          <img src="./img/shoppe.png" alt="Shopee" height="24">
-        </div>
+      </div>
+
+      <div class="container">
+        <section class="suggestions">
+          <div class="suggestions-header">
+            <h2>Có thể bạn cũng thích</h2>
+            <a href="#" class="see-more">Xem thêm →</a>
+          </div>
+          <div class="book-list">
+            <div class="book-item">
+              <a href="https://phong1807.github.io/VanHoc1/"
+                ><img src="img/de_tam_khong_ban.PNG" alt="Để tâm không bận "
+              /></a>
+              <a href="https://phong1807.github.io/VanHoc1/" class="title"
+                >Để tâm không bận</a
+              >
+              <p class="price">
+                52.000đ <span class="old-price">65.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/VanHoc5/"
+                ><img
+                  src="img/neu_biet_tram_nam_la_huu_han.webp"
+                  alt="Nếu Biết Trăm Năm Là Hữu Hạn"
+              /></a>
+              <a href="https://phong1807.github.io/VanHoc5/" class="title"
+                >Nếu Biết Trăm Năm Là Hữu Hạn</a
+              >
+              <p class="price">
+                143.100đ <span class="old-price">159.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/VanHoc4/"
+                ><img src="img/khong-gia-dinh.jpg" alt="Không Gia Đình"
+              /></a>
+              <a href="https://phong1807.github.io/VanHoc4/" class="title"
+                >Không Gia Đình</a
+              >
+              <p class="price">
+                128.000đ <span class="old-price">160.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/VanHoc2/"
+                ><img src="img/khuvuonmuaha.webp" alt="KHU VƯỜN MÙA HẠ"
+              /></a>
+              <a href="https://phong1807.github.io/VanHoc2/" class="title"
+                >KHU VƯỜN MÙA HẠ</a
+              >
+              <p class="price">
+                57.000đ <span class="old-price">68.000đ</span>
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
-    <div class="book-desc">
-      <h2>Giới thiệu sách</h2>
-      <p>Đúng như tên gọi, đây là cuốn sách về tình yêu, được viết theo một phong cách hoàn toàn khác lạ với nhà văn Nguyễn Nhật Ánh từ trước đến nay. Tác phẩm phù hợp với đông đảo đối tượng độc giả và được Nhà xuất bản Trẻ đầu tư mạnh về hình thức cũng như truyền thông, tiếp thị...Ngày xưa có một chuyện tình là một câu chuyện cảm động khi người ta yêu nhau, nỗi khát khao một hạnh phúc êm đềm ấm áp đến thế; hay đơn giản chỉ là chuyện ba người - anh, em, và người ấy...? Khi mở sách ra, độc giả sẽ được chứng kiến làn gió tình yêu chảy qua như rải nắng trên khuôn mặt mùa đông của cô gái; nụ hôn đầu tiên ngọt mật, cái ôm đầu tiên, những giọt nước mắt và cái ôm xiết cuối cùng của tấm tình người yêu người...Và người đọc sẽ tìm thấy câu trả lời, cho riêng mình.</p>
-    </div>
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "../html/footer.html");
+      });
+    </script>
+    <script src="../javascript/main.js"></script>
 
-    <div class="book-info-detail">
-      <h2>Thông tin chi tiết</h2>
-      <ul>
-        <li><strong>Tác giả:</strong> NGUYỄN NHẬT ÁNH</li>
-        <li><strong>Dịch giả:</strong> </li>
-        <li><strong>Nhà xuất bản:</strong> NXB Trẻ</li>
-        <li><strong>Kích thước:</strong> 14x20.5cm</li>
-        <li><strong>Số trang:</strong> 296</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="container">
-  <section class="suggestions">
-    <div class="suggestions-header">
-        <h2>Có thể bạn cũng thích</h2>
-        <a href="#" class="see-more">Xem thêm →</a>
-      </div>
-      <div class="book-list">
-      <div class="book-item">
-        <a href="https://phong1807.github.io/VanHoc1/"><img src="img/de_tam_khong_ban.PNG" alt="Để tâm không bận "></a>
-        <a href="https://phong1807.github.io/VanHoc1/" class="title">Để tâm không bận</a>
-        <p class="price">52.000đ <span class="old-price">65.000đ</span></p>
-      </div>
-      <div class="book-item">
-        <a href="https://phong1807.github.io/VanHoc5/"><img src="img/neu_biet_tram_nam_la_huu_han.webp" alt="Nếu Biết Trăm Năm Là Hữu Hạn"></a>
-        <a href="https://phong1807.github.io/VanHoc5/" class="title">Nếu Biết Trăm Năm Là Hữu Hạn</a>
-        <p class="price">143.100đ <span class="old-price">159.000đ</span></p>
-      </div>
-      <div class="book-item">
-        <a href="https://phong1807.github.io/VanHoc4/"><img src="img/khong-gia-dinh.jpg" alt="Không Gia Đình"></a>
-        <a href="https://phong1807.github.io/VanHoc4/" class="title">Không Gia Đình</a>
-        <p class="price">128.000đ <span class="old-price">160.000đ</span></p>
-      </div>
-      <div class="book-item">
-        <a href="https://phong1807.github.io/VanHoc2/"><img src="img/khuvuonmuaha.webp" alt="KHU VƯỜN MÙA HẠ"></a>
-        <a href="https://phong1807.github.io/VanHoc2/" class="title">KHU VƯỜN MÙA HẠ</a>
-        <p class="price">57.000đ <span class="old-price">68.000đ</span></p>
-      </div>
-    </div>
-  </section>
-</div>
-  
-<script src="script.js"></script>
-</body>
+    <script src="../javascript/Sach.js"></script>
+  </body>
 </html>
-
-

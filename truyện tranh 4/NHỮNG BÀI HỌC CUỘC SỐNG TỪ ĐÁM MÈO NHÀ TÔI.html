@@ -1,113 +1,250 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <title>NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
-</head>
-<body>
-  <div class="breadcrumb">
-    <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt; 
-    <a href="tieuthuyet.html">Truyện Tranh</a> &gt; 
-    <span class="current">NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI </span>
-  </div>
- 
-  <div class="container">
-    <div class="book-detail">
-      <div class="book-image">
-        <img src="img/434866892979186923874283778801.webp" alt="Bìa sách NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/Sach.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script src="../javascript/common.js"></script>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- LOGO -->
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+        </div>
+        <!-- MENU -->
+        <!-- HAMBURGER MENU BUTTON -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="inner-menu">
+          <ul>
+            <li><a href="../html/index.html">Trang chủ</a></li>
+            <li><a href="../html/introduction.html">Giới thiệu</a></li>
+            <li>
+              <a href="#">Thể loại</a>
+              <ul class="submenu">
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Văn học</a></li>
+                <li><a href="#">Truyện tranh</a></li>
+                <li><a href="#">Kỹ Năng sống</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="../html/contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <div class="search-box" id="searchBox">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i class="fas fa-search icon" onclick="toggleSearch()"></i>
+          </div>
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart"
+              ><ul class="shopping-cart-box">
+                <li>
+                  <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
+                </li>
+              </ul></i
+            >
+          </div>
+
+          <div class="accountIcon">
+            <i class="fa-regular fa-circle-user"></i>
+            <ul class="accountMenu">
+              <li><a href="#">Đăng ký</a></li>
+              <li><a href="#">Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="book-info">
-        <h1>NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI</h1>
-        <p><strong>Tác giả:</strong> JAM</p>
-        <div class="price-box">
-          <span class="discount-price">85.000₫</span>
-          <span class="original-price">100.000₫</span>
-          <span class="discount-percent">-15%</span>
+    </header>
+    <!-- hết phần header -->
+    <div class="inner-container">
+      <div class="breadcrumb">
+        <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt;
+        <a href="tieuthuyet.html">Truyện Tranh</a> &gt;
+        <span class="current">NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI </span>
+      </div>
+
+      <div class="container">
+        <div class="book-detail">
+          <div class="book-image">
+            <img
+              src="img/434866892979186923874283778801.webp"
+              alt="Bìa sách NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI"
+            />
+          </div>
+          <div class="book-info">
+            <h1>NHỮNG BÀI HỌC CUỘC SỐNG TỪ ĐÁM MÈO NHÀ TÔI</h1>
+            <p><strong>Tác giả:</strong> JAM</p>
+            <div class="price-box">
+              <span class="discount-price">85.000₫</span>
+              <span class="original-price">100.000₫</span>
+              <span class="discount-percent">-15%</span>
+            </div>
+            <div class="stock">
+              <button onclick="decrease()">-</button>
+              <input type="number" id="qty" value="1" min="1" max="100" />
+              <button onclick="increase()">+</button>
+              <span>Còn lại 100 trong kho</span>
+            </div>
+            <div class="buttons">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="buy">Mua ngay</button>
+            </div>
+            <div class="marketplace">
+              <p>Mua sách trên sàn TMDT</p>
+              <img
+                src="./img/1685525042lazada-app-logo.webp"
+                alt="Lazada"
+                height="24"
+              />
+              <img src="./img/shoppe.png" alt="Shopee" height="24" />
+            </div>
+          </div>
         </div>
-        <div class="stock">
-          <button onclick="decrease()">-</button>
-          <input type="number" id="qty" value="1" min="1" max="100">
-          <button onclick="increase()">+</button>
-          <span>Còn lại 100 trong kho</span>
+
+        <div class="book-desc">
+          <h2>Giới thiệu sách</h2>
+          <p>
+            "Ngày lại ngày nhìn mèo mà sống, tôi tự nhủ: 'Mình cũng muốn giống
+            mèo, sống là chính mình, bỏ bớt gánh nặng trên vai xuống...
+          </p>
+
+          <p>
+            Ngày nọ, một họa sĩ manga đi du lịch thì gặp những chú mèo con bị bỏ
+            rơi để trong túi đựng tờ rơi quảng cáo và sống với chúng kể từ đó,
+            Jam kể lại cách những chú mèo dạy cô cách thay thế cảm xúc của mình
+            và khiến bản thân vô ưu vô lự hơn. Đây là cách để đạt được điều đấy.
+            Jam nói: “Học hỏi từ những chú mèo đã giúp tôi thoải mái hơn về
+            những điều từng khiến tôi rất khó chịu, chẳng hạn như “phải đấy,
+            phải đấy, gặp phải tình huống như thế thì mèo sẽ làm như thế này
+            này…” Tôi quan sát lũ mèo, đồng thời sử dụng những gì học được từ
+            chúng trong cuộc sống hàng ngày…
+          </p>
+
+          <p>
+            [...] Một cuộc gặp gỡ có thể thay đổi đến cả tính cách và lối sống
+            của con người ta.
+          </p>
+
+          <p>
+            Với tôi là gặp mèo, còn người khác thì có thể là gặp được gia đình,
+            bạn bè, người yêu, ước mơ hay sự nghiệp, gặp được nơi chốn, đồ vật
+            hoặc một quyển sách nào đấy. Vậy nên lúc này đây, nếu có ai đó đang
+            nghĩ tương lai phía trước sẽ chẳng thay đổi được gì, ... tôi muốn
+            nói với người ấy rằng chuyện tương lai, chỉ vài giây sau còn chẳng
+            biết thế nào, và cũng chẳng thể biết sự tình cờ nào đang chờ đợi
+            chúng ta đâu!
+          </p>
+
+          <p>Như tôi ngày xưa ấy.</p>
+
+          <p>
+            Hy vọng rằng, cũng giống ta sẽ gặp được người mình cần phải gặp, đây
+            sẽ là cuốn sách bạn nhất định phải gặp được trong đời!"
+          </p>
         </div>
-        <div class="buttons">
-          <button class="add">Thêm vào giỏ hàng</button>
-          <button class="buy">Mua ngay</button>
+
+        <div class="book-info-detail">
+          <h2>Thông tin chi tiết</h2>
+          <ul>
+            <li><strong>Tác giả:</strong> JAM</li>
+            <li><strong>Dịch giả:</strong> HOÀNG LINH</li>
+            <li><strong>Nhà xuất bản:</strong> Dân Trí</li>
+            <li><strong>Kích thước:</strong> 14x20.5cm</li>
+            <li><strong>Số trang:</strong> 156</li>
+          </ul>
         </div>
-        <div class="marketplace">
-          <p>Mua sách trên sàn TMDT</p>
-          <img src="./img/1685525042lazada-app-logo.webp" alt="Lazada" height="24">
-          <img src="./img/shoppe.png" alt="Shopee" height="24">
-        </div>
+      </div>
+
+      <div class="container">
+        <section class="suggestions">
+          <div class="suggestions-header">
+            <h2>Có thể bạn cũng thích</h2>
+            <a href="#" class="see-more">Xem thêm →</a>
+          </div>
+          <div class="book-list">
+            <div class="book-item">
+              <a href="https://phong1807.github.io/TruyenTranh2/"
+                ><img
+                  src="img/nam-thang-dang-dang-chang-co-ngay-nao-thich-hop-di-lam-convert-01.webp"
+                  alt="NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM "
+              /></a>
+              <a href="https://phong1807.github.io/TruyenTranh2/" class="title"
+                >NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM</a
+              >
+              <p class="price">
+                118.150đ <span class="old-price">139.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/TruyenTranh3/"
+                ><img
+                  src="img/toi-ngay-cang-yeu-thich-ban-than-01.webp"
+                  alt="TÔI NGÀY CÀNG YÊU THÍCH BẢN THÂN"
+              /></a>
+              <a href="https://phong1807.github.io/TruyenTranh3/" class="title"
+                >TÔI NGÀY CÀNG YÊU THÍCH BẢN THÂN</a
+              >
+              <p class="price">
+                127.500đ <span class="old-price">150.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/TruyenTranh1/"
+                ><img
+                  src="img/cong-chua-toc-cam-yeu-duong-vui-phet-tru-nhung-luc-khong-01.webp"
+                  alt="CÔNG CHÚA TÓC CAM - YÊU ĐƯƠNG VUI PHẾT (TRỪ NHỮNG LÚC KHÔNG) "
+              /></a>
+              <a href="https://phong1807.github.io/TruyenTranh1/" class="title"
+                >CÔNG CHÚA TÓC CAM - YÊU ĐƯƠNG VUI PHẾT (TRỪ NHỮNG LÚC KHÔNG)</a
+              >
+              <p class="price">
+                118.150đ <span class="old-price">139.000đ</span>
+              </p>
+            </div>
+            <div class="book-item">
+              <a href="https://phong1807.github.io/TruyenTranh5/"
+                ><img
+                  src="img/thegioikhonghoiket01e172051664.webp"
+                  alt="THẾ GIỚI KHÔNG HỒI KẾT"
+              /></a>
+              <a href="https://phong1807.github.io/TruyenTranh5/" class="title"
+                >THẾ GIỚI KHÔNG HỒI KẾT</a
+              >
+              <p class="price">
+                255.000đ <span class="old-price">300.000đ</span>
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
-    <div class="book-desc">
-      <h2>Giới thiệu sách</h2>
-      <p>"Ngày lại ngày nhìn mèo mà sống, tôi tự nhủ: 'Mình cũng muốn giống mèo, sống là chính mình, bỏ bớt gánh nặng trên vai xuống... </p>
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "../html/footer.html");
+      });
+    </script>
+    <script src="../javascript/main.js"></script>
 
-      <p>Ngày nọ, một họa sĩ manga đi du lịch thì gặp những chú mèo con bị bỏ rơi để trong túi đựng tờ rơi quảng cáo và sống với chúng kể từ đó, Jam kể lại cách những chú mèo dạy cô cách thay thế cảm xúc của mình và khiến bản thân vô ưu vô lự hơn. Đây là cách để đạt được điều đấy. Jam nói: “Học hỏi từ những chú mèo đã giúp tôi thoải mái hơn về những điều từng khiến tôi rất khó chịu, chẳng hạn như “phải đấy, phải đấy, gặp phải tình huống như thế thì mèo sẽ làm như thế này này…” Tôi quan sát lũ mèo, đồng thời sử dụng những gì học được từ chúng trong cuộc sống hàng ngày…</p>
-      
-      <p>[...]
-
-        Một cuộc gặp gỡ có thể thay đổi đến cả tính cách và lối sống của con người ta.</p>
-
-      <p>Với tôi là gặp mèo, còn người khác thì có thể là gặp được gia đình, bạn bè, người yêu, ước mơ hay sự nghiệp, gặp được nơi chốn, đồ vật hoặc một quyển sách nào đấy. Vậy nên lúc này đây, nếu có ai đó đang nghĩ tương lai phía trước sẽ chẳng thay đổi được gì, ... tôi muốn nói với người ấy rằng chuyện tương lai, chỉ vài giây sau còn chẳng biết thế nào, và cũng chẳng thể biết sự tình cờ nào đang chờ đợi chúng ta đâu!</p>
-
-      <p>Như tôi ngày xưa ấy.</p>
-
-      <p>Hy vọng rằng, cũng giống ta sẽ gặp được người mình cần phải gặp, đây sẽ là cuốn sách bạn nhất định phải gặp được trong đời!"</p>
-    </div>
-
-    <div class="book-info-detail">
-      <h2>Thông tin chi tiết</h2>
-      <ul>
-        <li><strong>Tác giả:</strong> JAM</li>
-        <li><strong>Dịch giả:</strong> HOÀNG LINH </li>
-        <li><strong>Nhà xuất bản:</strong> Dân Trí</li>
-        <li><strong>Kích thước:</strong> 14x20.5cm</li>
-        <li><strong>Số trang:</strong> 156</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="container">
-  <section class="suggestions">
-    <div class="suggestions-header">
-        <h2>Có thể bạn cũng thích</h2>
-        <a href="#" class="see-more">Xem thêm →</a>
-      </div>
-      <div class="book-list">
-      <div class="book-item">
-        <a href="https://phong1807.github.io/TruyenTranh2/"><img src="img/nam-thang-dang-dang-chang-co-ngay-nao-thich-hop-di-lam-convert-01.webp" alt="NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM "></a>
-        <a href="https://phong1807.github.io/TruyenTranh2/" class="title">NĂM THÁNG ĐẰNG ĐẴNG, CHẲNG CÓ NGÀY NÀO THÍCH HỢP ĐI LÀM</a>
-        <p class="price">118.150đ <span class="old-price">139.000đ</span></p>
-      </div>
-      <div class="book-item">
-        <a href="https://phong1807.github.io/TruyenTranh3/"><img src="img/toi-ngay-cang-yeu-thich-ban-than-01.webp" alt="TÔI NGÀY CÀNG YÊU THÍCH BẢN THÂN"></a>
-        <a href="https://phong1807.github.io/TruyenTranh3/" class="title">TÔI NGÀY CÀNG YÊU THÍCH BẢN THÂN</a>
-        <p class="price">127.500đ <span class="old-price">150.000đ</span></p>
-      </div>
-      <div class="book-item">
-        <a href="https://phong1807.github.io/TruyenTranh1/"><img src="img/cong-chua-toc-cam-yeu-duong-vui-phet-tru-nhung-luc-khong-01.webp" alt="CÔNG CHÚA TÓC CAM - YÊU ĐƯƠNG VUI PHẾT (TRỪ NHỮNG LÚC KHÔNG) "></a>
-        <a href="https://phong1807.github.io/TruyenTranh1/" class="title">CÔNG CHÚA TÓC CAM - YÊU ĐƯƠNG VUI PHẾT (TRỪ NHỮNG LÚC KHÔNG)</a>
-        <p class="price">118.150đ <span class="old-price">139.000đ</span></p>
-      </div>
-      <div class="book-item">
-        <a href="https://phong1807.github.io/TruyenTranh5/"><img src="img/thegioikhonghoiket01e172051664.webp" alt="THẾ GIỚI KHÔNG HỒI KẾT"></a>
-        <a href="https://phong1807.github.io/TruyenTranh5/" class="title">THẾ GIỚI KHÔNG HỒI KẾT</a>
-        <p class="price">255.000đ <span class="old-price">300.000đ</span></p>
-      </div>
-    </div>
-  </section>
-</div>
-  
-<script src="script.js"></script>
-</body>
+    <script src="../javascript/Sach.js"></script>
+  </body>
 </html>
-
-
