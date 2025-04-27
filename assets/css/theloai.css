@@ -15,7 +15,7 @@ body {
 /* Thêm margin-top cho phần content phía dưới header */
 .inner-container {
   margin-top: 110px; /* Thay thế cho top: 80px */
-  position: static;
+
   /* margin-top: 80px;  */
 }
 /* Giao diện tổng thể chia 2 cột */
@@ -32,11 +32,11 @@ a {
 
 /* Menu bên trái */
 .site-list {
-  width: 150px;
+  width: 250px;
   background-color: white;
   padding: 15px;
   border-radius: 8px;
-  position: fixed;
+  /* position: fixed; */
   top: 20px;
   bottom: 20px;
   height: auto;
