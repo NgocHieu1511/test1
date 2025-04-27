@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="auth.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/Sach.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script src="../javascript/common.js"></script>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- LOGO -->
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+        </div>
+        <!-- MENU -->
+        <!-- HAMBURGER MENU BUTTON -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="inner-menu">
+          <ul>
+            <li><a href="../html/index.html">Trang chủ</a></li>
+            <li><a href="../html/introduction.html">Giới thiệu</a></li>
+            <li>
+              <a href="#">Thể loại</a>
+              <ul class="submenu">
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Văn học</a></li>
+                <li><a href="#">Truyện tranh</a></li>
+                <li><a href="#">Kỹ Năng sống</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="../html/contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <div class="search-box" id="searchBox">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i class="fas fa-search icon" onclick="toggleSearch()"></i>
+          </div>
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart"
+              ><ul class="shopping-cart-box">
+                <li>
+                  <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
+                </li>
+              </ul></i
+            >
+          </div>
+
+          <div class="accountIcon">
+            <i class="fa-regular fa-circle-user"></i>
+            <ul class="accountMenu">
+              <li><a href="#">Đăng ký</a></li>
+              <li><a href="#">Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- hết phần header -->
+    <div class="link-pointer">
+      <a href="#">Trang chủ</a> &gt; <a href="#">Đăng ký</a>
+    </div>
+
+    <div class="auth-container">
+      <div class="header">
+        <h2>ĐĂNG KÝ</h2>
+        <p>
+          Đã có tài khoản?
+          <a href="./dangnhap.html" class="auth-link">Đăng nhập tại đây</a>
+        </p>
+      </div>
+
+      <form class="auth-form" action="#" method="POST">
+        <input type="text" placeholder="Họ" name="ho" required />
+        <input type="text" placeholder="Tên" name="ten" required />
+        <input type="date" name="birth" required />
+        <input type="email" placeholder="Email" name="email" required />
+        <input type="tel" placeholder="Số điện thoại" name="sdt" required />
+        <input type="password" placeholder="Mật khẩu" name="matkhau" required />
+        <button type="submit" class="auth-btn">Đăng ký</button>
+      </form>
+
+      <div class="divider">
+        <span>Hoặc đăng ký bằng</span>
+      </div>
+
+      <div class="social-login">
+        <button type="button" class="social-btn facebook-btn">
+          <img src="./facebook.png" alt="Facebook" />
+          Facebook
+        </button>
+        <button type="button" class="social-btn google-btn">
+          <img src="./google.png" alt="Google" />
+          Google
+        </button>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "../html/footer.html");
+      });
+    </script>
+    <script src="../javascript/main.js"></script>
+
+    <script src="../javascript/Sach.js"></script>
+  </body>
+</html>
