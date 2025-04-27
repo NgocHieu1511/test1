@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
-    <link rel="stylesheet" href="../assets/css/Sach.css" />
+
+    <link rel="stylesheet" href="../assets/css/auth.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -76,42 +77,45 @@
       </div>
     </header>
     <!-- hết phần header -->
-    <div class="link-pointer">
-      <a href="#">Trang chủ</a> &gt; <a href="#">Đăng nhập</a>
-    </div>
-
-    <div class="auth-container">
-      <div class="header">
-        <h2>ĐĂNG NHẬP</h2>
-        <p>
-          Nếu bạn chưa có tài khoản <br />
-          <a href="./dangky.html" class="auth-link">Đăng ký tại đây</a>
-        </p>
+    <div class="inner-container">
+      <div class="link-pointer">
+        <a href="./index.html">Trang chủ</a> &gt;
+        <a href="./dangnhap.html">Đăng nhập</a>
       </div>
 
-      <form class="auth-form" action="#" method="POST">
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Mật khẩu" required />
-        <button type="submit" class="auth-btn">Đăng nhập</button>
-      </form>
+      <div class="auth-container">
+        <div class="header">
+          <h2>ĐĂNG NHẬP</h2>
+          <p>
+            Nếu bạn chưa có tài khoản <br />
+            <a href="./dangky.html" class="auth-link">Đăng ký tại đây</a>
+          </p>
+        </div>
 
-      <div class="secondary-action">
-        <a href="./quenmatkhau.html" class="auth-link">Quên mật khẩu?</a>
-      </div>
+        <form class="auth-form" action="#" method="POST">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Mật khẩu" required />
+          <button type="submit" class="auth-btn">Đăng nhập</button>
+        </form>
 
-      <div class="divider">
-        <span>Hoặc đăng nhập bằng</span>
-      </div>
+        <div class="secondary-action">
+          <a href="./quenmatkhau.html" class="auth-link">Quên mật khẩu?</a>
+        </div>
 
-      <div class="social-login">
-        <button type="button" class="social-btn facebook-btn">
-          <img src="./facebook.png" alt="Facebook" />
-          Facebook
-        </button>
-        <button type="button" class="social-btn google-btn">
-          <img src="./google.png" alt="Google" />
-          Google
-        </button>
+        <div class="divider">
+          <span>Hoặc đăng nhập bằng</span>
+        </div>
+
+        <div class="social-login">
+          <button type="button" class="social-btn facebook-btn">
+            <img src="../assets/img/icon-social/facebook.png" alt="Facebook" />
+            Facebook
+          </button>
+          <button type="button" class="social-btn google-btn">
+            <img src="../assets/img/icon-social/google.png" alt="Google" />
+            Google
+          </button>
+        </div>
       </div>
     </div>
     <div id="footer"></div>

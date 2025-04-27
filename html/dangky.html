@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
-    <link rel="stylesheet" href="../assets/css/Sach.css" />
+
+    <link rel="stylesheet" href="../assets/css/auth.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -76,42 +77,50 @@
       </div>
     </header>
     <!-- hết phần header -->
-    <div class="link-pointer">
-      <a href="#">Trang chủ</a> &gt; <a href="#">Đăng ký</a>
-    </div>
-
-    <div class="auth-container">
-      <div class="header">
-        <h2>ĐĂNG KÝ</h2>
-        <p>
-          Đã có tài khoản?
-          <a href="./dangnhap.html" class="auth-link">Đăng nhập tại đây</a>
-        </p>
+    <div class="inner-container">
+      <div class="link-pointer">
+        <a href="./index.html">Trang chủ</a> &gt;
+        <a href="./dangky.html">Đăng ký</a>
       </div>
 
-      <form class="auth-form" action="#" method="POST">
-        <input type="text" placeholder="Họ" name="ho" required />
-        <input type="text" placeholder="Tên" name="ten" required />
-        <input type="date" name="birth" required />
-        <input type="email" placeholder="Email" name="email" required />
-        <input type="tel" placeholder="Số điện thoại" name="sdt" required />
-        <input type="password" placeholder="Mật khẩu" name="matkhau" required />
-        <button type="submit" class="auth-btn">Đăng ký</button>
-      </form>
+      <div class="auth-container">
+        <div class="header">
+          <h2>ĐĂNG KÝ</h2>
+          <p>
+            Đã có tài khoản?
+            <a href="./dangnhap.html" class="auth-link">Đăng nhập tại đây</a>
+          </p>
+        </div>
 
-      <div class="divider">
-        <span>Hoặc đăng ký bằng</span>
-      </div>
+        <form class="auth-form" action="#" method="POST">
+          <input type="text" placeholder="Họ" name="ho" required />
+          <input type="text" placeholder="Tên" name="ten" required />
+          <input type="date" name="birth" required />
+          <input type="email" placeholder="Email" name="email" required />
+          <input type="tel" placeholder="Số điện thoại" name="sdt" required />
+          <input
+            type="password"
+            placeholder="Mật khẩu"
+            name="matkhau"
+            required
+          />
+          <button type="submit" class="auth-btn">Đăng ký</button>
+        </form>
 
-      <div class="social-login">
-        <button type="button" class="social-btn facebook-btn">
-          <img src="./facebook.png" alt="Facebook" />
-          Facebook
-        </button>
-        <button type="button" class="social-btn google-btn">
-          <img src="./google.png" alt="Google" />
-          Google
-        </button>
+        <div class="divider">
+          <span>Hoặc đăng ký bằng</span>
+        </div>
+
+        <div class="social-login">
+          <button type="button" class="social-btn facebook-btn">
+            <img src="../assets/img/icon-social/facebook.png" alt="Facebook" />
+            Facebook
+          </button>
+          <button type="button" class="social-btn google-btn">
+            <img src="../assets/img/icon-social/google.png" alt="Google" />
+            Google
+          </button>
+        </div>
       </div>
     </div>
     <div id="footer"></div>
