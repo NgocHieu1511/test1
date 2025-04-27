@@ -1,3 +1,23 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  position: fixed; /* hoặc absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Đảm bảo header luôn trên cùng */
+}
+
+/* Thêm margin-top cho phần content phía dưới header */
+.inner-container {
+  margin-top: 110px; /* Thay thế cho top: 80px */
+  position: static;
+  /* margin-top: 80px;  */
+}
 /* Giao diện tổng thể chia 2 cột */
 .main-content {
   display: flex;
