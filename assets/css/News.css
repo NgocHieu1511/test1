@@ -10,8 +10,9 @@ body {
   width: 100%;
   max-width: 1200px; /* hoặc không giới hạn nếu muốn full width */
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
+  justify-items: center;
 }
 .content,
 .info-section,
@@ -26,11 +27,15 @@ body {
   width: 100%;
   z-index: 1000; /* Đảm bảo header luôn trên cùng */
 }
+.title {
+  left: 0;
+}
 
 /* Thêm margin-top cho phần content phía dưới header */
 .inner-container {
   margin-top: 10px; /* Thay thế cho top: 80px */
   position: static;
+  width: 100%;
   /* margin-top: 80px;  */
 }
 
@@ -107,10 +112,11 @@ li {
 }
 
 .related-news {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 40px auto;
   background: #fff;
   padding: 20px;
+  line-height: 1.6;
 }
 
 .related-news h2 {

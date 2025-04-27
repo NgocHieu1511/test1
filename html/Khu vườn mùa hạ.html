@@ -17,74 +17,77 @@
   <script src="../javascript/common.js"></script>
   <body>
     <!-- header -->
-    <header class="header">
-      <!-- LOGO -->
-      <div class="inner-wrap">
-        <div class="inner-logo">
-          <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+  <header class="header">
+    <!-- LOGO -->
+    <div class="inner-wrap">
+      <div class="inner-logo">
+        <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+      </div>
+      <!-- MENU -->
+      <!-- HAMBURGER MENU BUTTON -->
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="inner-menu">
+        <ul>
+          <li><a href="./index.html">Trang chủ</a></li>
+          <li><a href="./introduction.html">Giới thiệu</a></li>
+          <li>
+            <a href="#">Thể loại</a>
+            <ul class="submenu">
+              <li><a href="./quản trị kinh doanh.html">Kinh doanh</a></li>
+              <li><a href="./văn học.html">Văn học</a></li>
+              <li><a href="./truyện tranh.html">Truyện tranh</a></li>
+              <li><a href="./sách kỹ năng sống.html">Kỹ Năng sống</a></li>
+              <li><a href="./tiểu thuyết.html">Tiểu thuyết</a></li>
+            </ul>
+          </li>
+          <li><a href="./trang 1.html">Tin tức</a></li>
+          <li><a href="./contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="icon">
+        <div class="search-box" id="searchBox">
+          <input type="text" placeholder="Tìm kiếm..." />
+          <i class="fas fa-search icon" onclick="toggleSearch()"></i>
         </div>
-        <!-- MENU -->
-        <!-- HAMBURGER MENU BUTTON -->
-        <div class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
+        <div class="shopping-cart">
+          <i class="fas fa-shopping-cart"
+            ><ul class="shopping-cart-box">
+              <li>
+                <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
+              </li>
+            </ul></i
+          >
         </div>
 
-        <div class="inner-menu">
-          <ul>
-            <li><a href="./index.html">Trang chủ</a></li>
-            <li><a href="./introduction.html">Giới thiệu</a></li>
-            <li>
-              <a href="#">Thể loại</a>
-              <ul class="submenu">
-                <li><a href="./quản trị kinh doanh.html">Kinh doanh</a></li>
-                <li><a href="./văn học.html">Văn học</a></li>
-                <li><a href="./truyện tranh.html">Truyện tranh</a></li>
-                <li><a href="./sách kỹ năng sống.html">Kỹ Năng sống</a></li>
-                <li><a href="./tiểu thuyết.html">Tiểu thuyết</a></li>
-              </ul>
-            </li>
-            <li><a href="./trang 1.html">Tin tức</a></li>
-            <li><a href="./contact.html">Liên hệ</a></li>
+        <div class="accountIcon">
+          <i class="fa-regular fa-circle-user"></i>
+          <ul class="accountMenu">
+            <li><a href="./dangky.html">Đăng ký</a></li>
+            <li><a href="./dangnhap.html">Đăng nhập</a></li>
           </ul>
         </div>
-
-        <div class="icon">
-          <div class="search-box" id="searchBox">
-            <input type="text" placeholder="Tìm kiếm..." />
-            <i class="fas fa-search icon" onclick="toggleSearch()"></i>
-          </div>
-          <div class="shopping-cart">
-            <i class="fas fa-shopping-cart"
-              ><ul class="shopping-cart-box">
-                <li>
-                  <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
-                </li>
-              </ul></i
-            >
-          </div>
-
-          <div class="accountIcon">
-            <i class="fa-regular fa-circle-user"></i>
-            <ul class="accountMenu">
-              <li><a href="./dangky.html">Đăng ký</a></li>
-              <li><a href="./dangnhap.html">Đăng nhập</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-    </header>
-    <!-- hết phần header -->
+    </div>
+  </header>
+  <!-- hết phần header -->
     <div class="inner-container">
       <div class="breadcrumb">
-        <a href="https://ngochieu1511.github.io/test1/#">Trang chủ</a> &gt;
-        <a href="tieuthuyet.html">Truyện Tranh</a> &gt;
+        <a href="./index.html">Trang chủ</a> &gt;
+        <a href="./văn học.html">Văn học</a> &gt;
         <span class="current">KHU VƯỜN MÙA HẠ </span>
       </div>
 
       <div class="container">
         <div class="book-detail">
           <div class="book-image">
-            <img src="img/khuvuonmuaha.webp" alt="Bìa sách KHU VƯỜN MÙA HẠ" />
+            <img
+              src="../assets/img/vanHoc/khuvuonmuaha.webp"
+              alt="Bìa sách KHU VƯỜN MÙA HẠ"
+            />
           </div>
           <div class="book-info">
             <h1>KHU VƯỜN MÙA HẠ</h1>
@@ -107,11 +110,15 @@
             <div class="marketplace">
               <p>Mua sách trên sàn TMDT</p>
               <img
-                src="./img/1685525042lazada-app-logo.webp"
+                src="../assets/img/icon-social/lazada.webp"
                 alt="Lazada"
                 height="24"
               />
-              <img src="./img/shoppe.png" alt="Shopee" height="24" />
+              <img
+                src="../assets/img/icon-social/shoppe.png"
+                alt="Shopee"
+                height="24"
+              />
             </div>
           </div>
         </div>
@@ -150,14 +157,16 @@
         <section class="suggestions">
           <div class="suggestions-header">
             <h2>Có thể bạn cũng thích</h2>
-            <a href="#" class="see-more">Xem thêm →</a>
+            <a href="./văn học.html" class="see-more">Xem thêm →</a>
           </div>
           <div class="book-list">
             <div class="book-item">
-              <a href="https://phong1807.github.io/VanHoc1/"
-                ><img src="img/de_tam_khong_ban.PNG" alt="Để tâm không bận "
+              <a href="./Để tâm không bận.html"
+                ><img
+                  src="../assets/img/vanHoc/de_tam_khong_ban.png"
+                  alt="Để tâm không bận "
               /></a>
-              <a href="https://phong1807.github.io/VanHoc1/" class="title"
+              <a href="./Để tâm không bận.html" class="title"
                 >Để tâm không bận</a
               >
               <p class="price">
@@ -165,12 +174,12 @@
               </p>
             </div>
             <div class="book-item">
-              <a href="https://phong1807.github.io/VanHoc3/"
+              <a href="./Ngày Xưa Có Một Chuyện Tình.html"
                 ><img
-                  src="img/ngay_xua_co_mot_chuyen_tinh.png"
+                  src="../assets/img/vanHoc/ngay_xua_co_mot_chuyen_tinh.png"
                   alt="Ngày Xưa Có Một Chuyện Tình"
               /></a>
-              <a href="https://phong1807.github.io/VanHoc3/" class="title"
+              <a href="./Ngày Xưa Có Một Chuyện Tình.html" class="title"
                 >Ngày Xưa Có Một Chuyện Tình</a
               >
               <p class="price">
@@ -178,23 +187,23 @@
               </p>
             </div>
             <div class="book-item">
-              <a href="https://phong1807.github.io/VanHoc4/"
-                ><img src="img/khong-gia-dinh.jpg" alt="Không Gia Đình"
+              <a href="./Không gia đình.html"
+                ><img
+                  src="../assets/img/vanHoc/khong-gia-dinh.jpg"
+                  alt="Không Gia Đình"
               /></a>
-              <a href="https://phong1807.github.io/VanHoc4/" class="title"
-                >Không Gia Đình</a
-              >
+              <a href="./Không gia đình.html" class="title">Không Gia Đình</a>
               <p class="price">
                 128.000đ <span class="old-price">160.000đ</span>
               </p>
             </div>
             <div class="book-item">
-              <a href="https://phong1807.github.io/VanHoc5/"
+              <a href="./Nếu biết trăm năm là hữu hạn.html"
                 ><img
-                  src="img/neu_biet_tram_nam_la_huu_han.webp"
+                  src="../assets/img/vanHoc/neu_biet_tram_nam_la_huu_han.webp"
                   alt="Nếu biết trăm năm là hữu hạn"
               /></a>
-              <a href="https://phong1807.github.io/VanHoc5/" class="title"
+              <a href="./Nếu biết trăm năm là hữu hạn.html" class="title"
                 >Nếu biết trăm năm là hữu hạn</a
               >
               <p class="price">

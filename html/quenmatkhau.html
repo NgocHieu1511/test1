@@ -89,7 +89,7 @@
       </div>
 
       <div class="auth-container">
-        <div class="header">
+        <div class="main-header">
           <h2>QUÊN MẬT KHẨU</h2>
           <p>
             Đã nhớ mật khẩu?
@@ -108,16 +108,24 @@
 
         <div class="social-login">
           <button type="button" class="social-btn facebook-btn">
-            <img src="../assets/img/icon-social/facebook.png" alt="Facebook" />
+            <img src="../assets/img/img_đk/facebook.png" alt="Facebook" />
             Facebook
           </button>
           <button type="button" class="social-btn google-btn">
-            <img src="../assets/img/icon-social/google.png" alt="Google" />
+            <img src="../assets/img/img_đk/google.png" alt="Google" />
             Google
           </button>
         </div>
       </div>
     </div>
+    <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        load("#footer", "../html/footer.html");
+      });
+    </script>
     <script src="../javascript/main.js"></script>
+
+    <script src="../javascript/Sach.js"></script>
   </body>
 </html>

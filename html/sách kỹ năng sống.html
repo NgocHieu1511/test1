@@ -13,91 +13,90 @@
   <script src="../javascript/common.js"></script>
   <body>
     <!-- header -->
-    <!-- header -->
-    <header class="header">
-      <!-- LOGO -->
-      <div class="inner-wrap">
-        <div class="inner-logo">
-          <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+  <header class="header">
+    <!-- LOGO -->
+    <div class="inner-wrap">
+      <div class="inner-logo">
+        <img src="../assets/img/logo2.png" alt="DHP BOOKS" />
+      </div>
+      <!-- MENU -->
+      <!-- HAMBURGER MENU BUTTON -->
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="inner-menu">
+        <ul>
+          <li><a href="./index.html">Trang chủ</a></li>
+          <li><a href="./introduction.html">Giới thiệu</a></li>
+          <li>
+            <a href="#">Thể loại</a>
+            <ul class="submenu">
+              <li><a href="./quản trị kinh doanh.html">Kinh doanh</a></li>
+              <li><a href="./văn học.html">Văn học</a></li>
+              <li><a href="./truyện tranh.html">Truyện tranh</a></li>
+              <li><a href="./sách kỹ năng sống.html">Kỹ Năng sống</a></li>
+              <li><a href="./tiểu thuyết.html">Tiểu thuyết</a></li>
+            </ul>
+          </li>
+          <li><a href="./trang 1.html">Tin tức</a></li>
+          <li><a href="./contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="icon">
+        <div class="search-box" id="searchBox">
+          <input type="text" placeholder="Tìm kiếm..." />
+          <i class="fas fa-search icon" onclick="toggleSearch()"></i>
         </div>
-        <!-- MENU -->
-        <!-- HAMBURGER MENU BUTTON -->
-        <div class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
+        <div class="shopping-cart">
+          <i class="fas fa-shopping-cart"
+            ><ul class="shopping-cart-box">
+              <li>
+                <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
+              </li>
+            </ul></i
+          >
         </div>
 
-        <div class="inner-menu">
-          <ul>
-            <li><a href="./index.html">Trang chủ</a></li>
-            <li><a href="./introduction.html">Giới thiệu</a></li>
-            <li>
-              <a href="#">Thể loại</a>
-              <ul class="submenu">
-                <li><a href="./quản trị kinh doanh.html">Kinh doanh</a></li>
-                <li><a href="./văn học.html">Văn học</a></li>
-                <li><a href="./truyện tranh.html">Truyện tranh</a></li>
-                <li><a href="./sách kỹ năng sống.html">Kỹ Năng sống</a></li>
-                <li><a href="./tiểu thuyết.html">Tiểu thuyết</a></li>
-              </ul>
-            </li>
-            <li><a href="./trang 1.html">Tin tức</a></li>
-            <li><a href="./contact.html">Liên hệ</a></li>
+        <div class="accountIcon">
+          <i class="fa-regular fa-circle-user"></i>
+          <ul class="accountMenu">
+            <li><a href="./dangky.html">Đăng ký</a></li>
+            <li><a href="./dangnhap.html">Đăng nhập</a></li>
           </ul>
         </div>
-
-        <div class="icon">
-          <div class="search-box" id="searchBox">
-            <input type="text" placeholder="Tìm kiếm..." />
-            <i class="fas fa-search icon" onclick="toggleSearch()"></i>
-          </div>
-          <div class="shopping-cart">
-            <i class="fas fa-shopping-cart"
-              ><ul class="shopping-cart-box">
-                <li>
-                  <span>Chưa có sản phẩm nào được thêm vào giỏ hàng</span>
-                </li>
-              </ul></i
-            >
-          </div>
-
-          <div class="accountIcon">
-            <i class="fa-regular fa-circle-user"></i>
-            <ul class="accountMenu">
-              <li><a href="./dangky.html">Đăng ký</a></li>
-              <li><a href="./dangnhap.html">Đăng nhập</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-    </header>
-    <!-- hết phần header -->
+    </div>
+  </header>
+  <!-- hết phần header -->
 
     <div class="inner-container">
       <div class="main-content">
         <nav class="site-list">
           <ul>
-            <li><a href="#">Tiểu thuyết</a></li>
-            <li><a href="#">Văn học</a></li>
-            <li><a href="#">Quản trị kinh doanh</a></li>
-            <li><a href="#">Truyện tranh</a></li>
-            <li><a href="#">Sách kỹ năng sống</a></li>
+            <li><a href="./tiểu thuyết.html">Tiểu thuyết</a></li>
+            <li><a href="./văn học.html">Văn học</a></li>
+            <li><a href="./quản trị kinh doanh.html">Quản trị kinh doanh</a></li>
+            <li><a href="./truyện tranh.html">Truyện tranh</a></li>
+            <li><a href="./sách kỹ năng sống.html">Sách kỹ năng sống</a></li>
           </ul>
         </nav>
   
         <div class="content">
           <section class="link-pointer">
-            <a href="#">trang chủ</a> >
+            <a href="./index.html">Trang chủ</a> >
             <!-- gắn link trang chủ-->
-            <a href="#">Tiểu thuyết</a>
+            <a href="./sách kỹ năng sống.html">Kỹ năng sống</a>
           </section>
   
           <div class="list-book">
             <div class="headline"><p>Sách mới</p></div>
             <div class="display-book">
-              <a href="#" class="book-card-full">
+              <a href="./KiNang1.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/bo-sach-chuan-20221013033151-vnpgu.png"
+                    src="../assets/img/kyNangSong/bo-sach-chuan.png"
                     alt="Bìa sách 90 ngày cùng con dậy thì tỏa sáng"
                   />
                 </div>
@@ -109,10 +108,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-card-full">
+              <a href="./đắc nhân tâm.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/dacnhantam86.jpg"
+                    src="../assets/img/kyNangSong/dacnhantam86.jpg"
                     alt="ĐẮC NHÂN TÂM"
                   />
                 </div>
@@ -124,10 +123,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-card-full">
+              <a href="./Hiểu về trái tim.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/13640125.jpg"
+                    src="../assets/img/kyNangSong/hieu-ve-trai-tim.jpg"
                     alt="Bìa sách Hiểu về trái tim"
                   />
                 </div>
@@ -139,10 +138,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-card-full">
+              <a href="./phát triển kỹ năng xã hội.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/phattrienkynangxahoi50hoatdong.webp"
+                    src="../assets/img/kyNangSong/phattrienkynangxahoi.webp"
                     alt="Bìa sách PHÁT TRIỂN KỸ NĂNG XÃ HỘI"
                   />
                 </div>
@@ -156,10 +155,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-card-full">
+              <a href="./tuổi trẻ đáng giá bao nhiêu.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/tuoitredanggiabaonhieu01.webp"
+                    src="../assets/img/kyNangSong/tuoitredanggiabaonhieu.webp"
                     alt="Bìa sách TUỔI TRẺ ĐÁNG GIÁ BAO NHIÊU"
                   />
                 </div>
@@ -176,10 +175,10 @@
           <div class="list-book">
             <div class="headline"><p>Sách bán chạy</p></div>
             <div class="display-book">
-              <a href="#" class="book-card-full">
+              <a href="./KiNang1.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/bo-sach-chuan-20221013033151-vnpgu.png"
+                    src="../assets/img/kyNangSong/bo-sach-chuan.png"
                     alt="Bìa sách 90 ngày cùng con dậy thì tỏa sáng"
                   />
                 </div>
@@ -191,10 +190,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-card-full">
+              <a href="./đắc nhân tâm.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/dacnhantam86.jpg"
+                    src="../assets/img/kyNangSong/dacnhantam86.jpg"
                     alt="ĐẮC NHÂN TÂM"
                   />
                 </div>
@@ -206,10 +205,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-card-full">
+              <a href="./Hiểu về trái tim.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/13640125.jpg"
+                    src="../assets/img/kyNangSong/hieu-ve-trai-tim.jpg"
                     alt="Bìa sách Hiểu về trái tim"
                   />
                 </div>
@@ -221,10 +220,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-card-full">
+              <a href="./phát triển kỹ năng xã hội.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/phattrienkynangxahoi50hoatdong.webp"
+                    src="../assets/img/kyNangSong/phattrienkynangxahoi.webp"
                     alt="Bìa sách PHÁT TRIỂN KỸ NĂNG XÃ HỘI"
                   />
                 </div>
@@ -238,10 +237,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-card-full">
+              <a href="./tuổi trẻ đáng giá bao nhiêu.html" class="book-card-full">
                 <div class="book-card">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/tuoitredanggiabaonhieu01.webp"
+                    src="../assets/img/kyNangSong/tuoitredanggiabaonhieu.webp"
                     alt="Bìa sách TUỔI TRẺ ĐÁNG GIÁ BAO NHIÊU"
                   />
                 </div>
@@ -258,10 +257,10 @@
           <div class="list-book">
             <div class="headline"><p>Tất cả các sách</p></div>
             <div class="all-books-box">
-              <a href="#" class="book-item">
+              <a href="./tuổi trẻ đáng giá bao nhiêu.html" class="book-item">
                 <div class="book-img-box">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/tuoitredanggiabaonhieu01.webp"
+                    src="../assets/img/kyNangSong/tuoitredanggiabaonhieu.webp"
                     alt="Bìa sách TUỔI TRẺ ĐÁNG GIÁ BAO NHIÊU"
                   />
                 </div>
@@ -273,10 +272,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-item">
+              <a href="./KiNang1.html" class="book-item">
                 <div class="book-img-box">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/bo-sach-chuan-20221013033151-vnpgu.png"
+                    src="../assets/img/kyNangSong/bo-sach-chuan.png"
                     alt="Bìa sách 90 ngày cùng con dậy thì tỏa sáng"
                   />
                 </div>
@@ -288,10 +287,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-item">
+              <a href="./phát triển kỹ năng xã hội.html" class="book-item">
                 <div class="book-img-box">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/phattrienkynangxahoi50hoatdong.webp"
+                    src="../assets/img/kyNangSong/phattrienkynangxahoi.webp"
                     alt="Bìa sách PHÁT TRIỂN KỸ NĂNG XÃ HỘI"
                   />
                 </div>
@@ -305,10 +304,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-item">
+              <a href="./Hiểu về trái tim.html" class="book-item">
                 <div class="book-img-box">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/13640125.jpg"
+                    src="../assets/img/kyNangSong/hieu-ve-trai-tim.jpg"
                     alt="Bìa sách Hiểu về trái tim"
                   />
                 </div>
@@ -320,10 +319,10 @@
                 </p>
               </a>
   
-              <a href="#" class="book-item">
+              <a href="./đắc nhân tâm.html" class="book-item">
                 <div class="book-img-box">
                   <img
-                    src="img_90 ngày cung con dậy thì tỏa sáng/dacnhantam86.jpg"
+                    src="../assets/img/kyNangSong/dacnhantam86.jpg"
                     alt="ĐẮC NHÂN TÂM"
                   />
                 </div>
